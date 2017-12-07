@@ -1,0 +1,121 @@
+@import url("public.css");
+html {
+  font-size: 13.333vw; }
+
+.mycomminsis {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+  .mycomminsis .menber-top {
+    width: 100%;
+    height: 3.9rem;
+    background: #cccccc;
+    text-align: center; }
+    .mycomminsis .menber-top img {
+      margin-top: 0.27rem;
+      width: 1.55rem;
+      height: 1.55rem;
+      background: none; }
+    .mycomminsis .menber-top dl dt {
+      margin-top: 0.25rem;
+      font-size: 0.30rem;
+      color: #fff; }
+    .mycomminsis .menber-top dl dd {
+      font-size: 0.24rem;
+      color: #fff;
+      margin-top: 0.1rem; }
+  .mycomminsis .title-di {
+    width: 100%;
+    height: 1.6rem;
+    background: none;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: 3rem; }
+    .mycomminsis .title-di .title-white {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border-radius: 0.1rem;
+      box-shadow: 0.02rem 0.04rem 0.06rem #000;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal; }
+      .mycomminsis .title-di .title-white dl {
+        -webkit-box-flex: 1;
+        text-align: center; }
+        .mycomminsis .title-di .title-white dl dt {
+          color: #ff712b;
+          font-size: 0.24rem;
+          margin-top: 0.45rem; }
+        .mycomminsis .title-di .title-white dl dd {
+          color: #303030;
+          font-size: 0.28rem;
+          margin-top: 0.1rem; }
+      .mycomminsis .title-di .title-white span {
+        display: block;
+        width: 0.02rem;
+        height: 80%;
+        background: #bfbfbf;
+        margin-top: 0.15rem; }
+  .mycomminsis .pd {
+    width: 100%;
+    height: 0.88rem;
+    background: #f0f0f0; }
+  .mycomminsis .aditemi {
+    width: 100%;
+    height: 2rem;
+    background: #fff;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal; }
+    .mycomminsis .aditemi dl {
+      -webkit-box-flex: 1;
+      text-align: center; }
+      .mycomminsis .aditemi dl img {
+        width: 0.8rem;
+        height: 0.8rem;
+        background: none; }
+      .mycomminsis .aditemi dl dd {
+        font-size: 0.28rem;
+        color: #303030; }
+  .mycomminsis .comminul {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-top: 0.1rem; }
+    .mycomminsis .comminul ul {
+      width: 100%;
+      height: 100%;
+      background: none;
+      padding-left: 0.3rem;
+      box-sizing: border-box; }
+      .mycomminsis .comminul ul li {
+        width: 100%;
+        height: 1rem;
+        background: none;
+        border-bottom: 0.01rem solid #BFBFBF;
+        display: -webkit-box;
+        -webkit-box-orient: horizontal; }
+        .mycomminsis .comminul ul li h4 {
+          font-weight: normal;
+          font-size: 0.28rem;
+          color: #303030;
+          line-height: 1rem;
+          -webkit-box-flex: 1; }
+        .mycomminsis .comminul ul li span {
+          display: inline-block;
+          width: 0.2rem;
+          height: 0.2rem;
+          /*background: red;*/
+          border: 0.02rem solid #303030;
+          transform: rotateZ(45deg);
+          border-bottom: none;
+          border-left: none;
+          vertical-align: middle;
+          margin-right: 0.3rem;
+          margin-top: -0.3rem;
+          margin-left: 0.1rem; }
+
+/*# sourceMappingURL=Mycommission.css.map */

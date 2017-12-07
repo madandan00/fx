@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/mypoints.css" />
+		<title>我的积分</title>
+	</head>
+
+	<body>
+		<div class="mypoints">
+			<div class="back-mypo">
+				<img src="images/backgout.png" alt="" />
+				<div class="img-rba">
+					<img src="images/people.png" alt="" />
+				</div>
+				<a href="integral.html" style="color: #ffffff;">
+					<dl class="positione">
+						<dt><img src="images/a_03.png" class="log-rw" alt="" /></dt>
+						<dd>任务积分</dd>
+					</dl>
+				</a>
+				<a href="Signin.html" style="color: #ffffff;">
+					<div class="qipositi">
+						<dt><img src="images/b_05.png" class="log-rw" alt="" /></dt>
+						<dd>签到</dd>
+					</div>
+				</a>
+				<div class="mylog2">
+					<img src="images/myjifen_03.png" style="width: 0.28rem;height: 0.28rem; margin-right: 0.1rem;" /> 积分说明
+				</div>
+				<p>500<span>积分</span></p>
+			</div>
+			<div class="logbook">
+				<img src="images/log-jf_10.png" />
+				<span>积分明细</span>
+			</div>
+			<div class="poinstiafg">
+				<dl>
+					<dt>签到积分</dt>
+					<dd>2017.08.15<span>15:00:00</span></dd>
+					<p>+5</p>
+				</dl>
+				<dl>
+					<dt>评价积分</dt>
+					<dd>2017.08.15<span>15:00:00</span></dd>
+					<p>+5</p>
+				</dl>
+			</div>
+
+		</div>
+	</body>
+
+</html>
+<script src="js/zepto.min.js"></script>
+<script>
+	$('.mylog2').tap(function() {
+		window.location.href = "intagral.html";
+	})
+</script>

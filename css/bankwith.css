@@ -1,0 +1,109 @@
+@import url("public.css");
+html {
+  font-size: 13.333vw; }
+
+.bankwith {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+  .bankwith .cash-back {
+    width: 100%;
+    height: 3rem;
+    background: #FFFFFF; }
+    .bankwith .cash-back .back-ug {
+      width: 100%;
+      height: 100%;
+      background: none; }
+    .bankwith .cash-back .cash-money {
+      width: 2rem;
+      height: 0.9rem;
+      background: none;
+      color: #ff712b;
+      position: absolute;
+      top: 1.2rem;
+      left: 3rem;
+      z-index: 99; }
+      .bankwith .cash-back .cash-money span {
+        font-size: 0.41rem;
+        position: relative; }
+        .bankwith .cash-back .cash-money span i {
+          font-size: 0.32rem; }
+        .bankwith .cash-back .cash-money span .yuan {
+          margin-top: -1rem;
+          position: absolute;
+          top: 0.8rem;
+          margin-left: 0.1rem; }
+      .bankwith .cash-back .cash-money .yuan {
+        font-size: 0.32rem;
+        display: inline-block; }
+    .bankwith .cash-back .peo-img {
+      width: 2.45rem;
+      height: 2.45rem;
+      background: none;
+      position: absolute;
+      left: 2.5rem;
+      top: 0.8rem; }
+    .bankwith .cash-back dl {
+      position: absolute;
+      font-size: 0.28rem;
+      top: 1.8rem;
+      right: 1.2rem;
+      color: #FFFFFF; }
+      .bankwith .cash-back dl img {
+        width: 0.51rem;
+        height: 0.47rem;
+        background: none; }
+      .bankwith .cash-back dl a {
+        color: #FFFFFF; }
+  .bankwith .banktitle {
+    width: 100%;
+    height: 0.95rem;
+    background: #FFFFFF;
+    border-bottom: 0.01rem solid #bfbfbf; }
+    .bankwith .banktitle ul {
+      display: -webkit-box;
+      -webkit-box-orient: horizontal; }
+      .bankwith .banktitle ul li {
+        font-size: 0.3rem;
+        color: #303030;
+        -webkit-box-flex: 1;
+        text-align: center;
+        line-height: 0.95rem;
+        margin-left: 0.6rem;
+        margin-right: 0.6rem; }
+      .bankwith .banktitle ul .bacj {
+        color: #ff712b;
+        border-bottom: 0.02rem solid #FF712B; }
+  .bankwith .consumption {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    padding-left: 0.3rem;
+    box-sizing: border-box;
+    margin-top: 0.1rem; }
+    .bankwith .consumption dl {
+      width: 100%;
+      height: 1.3rem;
+      background: #ffffff;
+      border-bottom: 0.01rem solid #BFBFBF;
+      position: relative; }
+      .bankwith .consumption dl dt {
+        font-size: 0.28rem;
+        color: #303030;
+        padding-top: 0.26rem; }
+      .bankwith .consumption dl dd {
+        font-size: 0.24rem;
+        color: #606060;
+        margin-top: 0.2rem; }
+        .bankwith .consumption dl dd span {
+          margin-left: 0.1rem; }
+      .bankwith .consumption dl p {
+        font-size: 0.3rem;
+        color: #303030;
+        position: absolute;
+        right: 0.3rem;
+        top: 0.26rem; }
+
+/*# sourceMappingURL=bankwith.css.map */

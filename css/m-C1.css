@@ -1,0 +1,45 @@
+.content {
+  overflow: hidden;
+}
+
+.tip {
+  height: 1.4rem;
+  background: #fff;
+  padding: 0 0.32rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+.tip div {
+  width: 100%;
+  height: 100%;
+}
+.tip i, .tip span {
+  color: #ff712b;
+  line-height: 1.4rem;
+  float: left;
+}
+.tip i {
+  font-size: 0.6rem;
+}
+.tip span {
+  font-size: 0.32rem;
+  margin-left: 0.3rem;
+}
+
+.description {
+  padding: 0.25rem 0.32rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  background: #fff;
+}
+.description p {
+  font-size: 0.3rem;
+  color: #333;
+  line-height: 0.6rem;
+}

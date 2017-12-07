@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<title>添加地址</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/border1.css" />
+		<link rel="stylesheet" href="css/m-add-address.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_404971_58eblf73vq11c3di.css" />
+		<script type="text/javascript" src="js/public.js"></script>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<link rel="stylesheet" href="css/address.css" />
+		<!--<script src="http://api.map.baidu.com/api?v=1.3" type="text/javascript"></script>-->
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="mark"></div>
+			<!--编辑页面-->
+			<div class="box border1">
+				<div>
+					<label for="nc">姓名:</label>
+					<input type="text" value="" class="in">
+				</div>
+			</div>
+			<div class="box border1">
+				<div>
+					<label for="nc">手机号:</label>
+					<input type="text" value="" class="in" required>
+				</div>
+			</div>
+
+			<div class="browser">
+				<!--选择地区-->
+				<section class="express-area">
+					<a id="expressArea" href="javascript:void(0)">
+						<dl>
+							<dt style="font-size: 0.28rem;color: #303030;">选择地区：</dt>
+							<dd id="m-area">省 > 市 > 区/县<i class="iconfont icon-arrow-left"></i></dd>
+						</dl>
+					</a>
+				</section>
+				<!--选择地区弹层-->
+				<section id="areaLayer" class="express-area-box">
+					<header>
+						<h3>选择地区</h3>
+						<a id="backUp" class="back iconfont icon-zuojiantou1" href="javascript:void(0)" title="返回"></a>
+						<a id="closeArea" class="close iconfont icon-x" href="javascript:void(0)" title="关闭"></a>
+					</header>
+					<article id="areaBox">
+						<ul id="areaList" class="area-list"></ul>
+					</article>
+				</section>
+				<!--遮罩层-->
+				<div id="areaMask" class="m-mask"></div>
+				<script src="js/jquery.area.js"></script>
+			</div>
+
+			<div class="box border1">
+				<div>
+					<label for="nc">详细地址:</label>
+					<input type="text" value="" class="in" maxlength="11" required>
+				</div>
+			</div>
+			
+			<div class="box border1">
+				<div>
+					<span>设为默认地址</span>
+					<i class="iconfont icon-yuan choose "></i>
+
+				</div>
+			</div>
+
+		</div>
+		<input type="hidden" id="name"/>
+		<div id="save">
+			<button>保存</button>
+		</div>
+       <span id="mmm">dana</span>
+	</body>
+
+	<script>
+		//默认地址
+		$(".choose").on("click", function() {
+			if($(this).hasClass("icon-yuan")) {
+				$(".choose").removeClass("icon-chuangyikongjianICON_fuzhi-").addClass("icon-yuan");
+				$(this).removeClass("icon-yuan").addClass("icon-chuangyikongjianICON_fuzhi-");
+
+			} else {
+				$(this).removeClass("icon-chuangyikongjianICON_fuzhi-").addClass("icon-yuan")
+			}
+		})
+
+		$("#mmm").on("click", function() {
+			var val=$("#name").val();
+			var area=val.split(",")
+			alert($("#name").val())
+			console.log(area)
+			
+		})
+	</script>
+
+</html>

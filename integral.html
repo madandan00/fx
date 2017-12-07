@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>我的积分任务</title>
+	<link rel="stylesheet" type="text/css" href="css/only.css">
+	<link rel="stylesheet" type="text/css" href="css/integral.css">
+	<style type="text/css">
+        html{
+        	font-size:13.333vw;
+        }
+	</style>
+</head>
+<body>
+	<!--完善信息送积分-->
+	<div class="integ">
+		<div class="integ_mission">
+			<div class="o_integ_mission">
+				<div class="i_integ_mission">
+					<img class="img" src="img/inform.png">
+					<span class="span_integ">完善信息</span><br>
+					<span class="add_thirty">+30积分奖励</span>
+					<button class="to_setting">去设置</button>
+				</div>
+			</div>
+			<div class="centre"><hr/></div>
+			<div class="down_integ">
+				<div class="i_down_integ">
+					<img class="img_2" src="img/inform.png">
+					<span class="span_integ">首次下单</span><br>
+					<span class="add_thirty">+30积分奖励</span>
+					<button class="to_place">去下单</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script>
+	$(".to_setting").tap(function(){
+		window.location.href="myInfo.html";
+	})
+	$(".to_place").tap(function(){
+		window.location.href="";
+	})
+</script>

@@ -1,0 +1,162 @@
+@import url("reset.css");
+html {
+  font-size: 13.333vw; }
+
+.swrepp {
+  width: 100%;
+  height: 100%;
+  background: #eeeeee;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+  .swrepp .orgi-sect {
+    -webkit-box-flex: 1; }
+    .swrepp .orgi-sect .orgi-qqxx {
+      width: 100%;
+      height: 0.88rem;
+      background: none;
+      padding-left: 0.3rem;
+      box-sizing: border-box;
+      line-height: 0.88rem; }
+      .swrepp .orgi-sect .orgi-qqxx p {
+        font-size: 0.30rem;
+        color: #333333; }
+      .swrepp .orgi-sect .orgi-qqxx span {
+        color: #ff5a5a; }
+    .swrepp .orgi-sect .copase {
+      width: 100%;
+      height: 1rem;
+      background: #FFFFFF;
+      padding-left: 0.3rem;
+      padding-right: 0.3rem;
+      box-sizing: border-box;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal;
+      position: relative; }
+      .swrepp .orgi-sect .copase ul {
+        padding-top: 0.1rem; }
+        .swrepp .orgi-sect .copase ul .weixin {
+          font-size: 0.28rem; }
+        .swrepp .orgi-sect .copase ul .gun-zhu {
+          font-size: 0.24rem;
+          color: #999999; }
+      .swrepp .orgi-sect .copase span {
+        display: block;
+        padding: 0.15rem 0.3rem 0.15rem 0.3rem;
+        border: 1px solid #ff712b;
+        font-size: 0.24rem;
+        color: #ff712b;
+        text-align: center;
+        line-height: 0.3rem;
+        border-radius: 0.1rem;
+        position: absolute;
+        right: 0.3rem;
+        top: 0.2rem; }
+    .swrepp .orgi-sect .justification {
+      width: 100%;
+      height: 1rem;
+      background: #FFFFFF;
+      border-bottom: 1px solid #bfbfbf;
+      margin-top: 0.1rem;
+      padding-left: 0.3rem;
+      box-sizing: border-box; }
+      .swrepp .orgi-sect .justification p {
+        line-height: 1rem;
+        font-size: 0.28rem; }
+    .swrepp .orgi-sect .reason-app {
+      padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+      background: #FFFFFF;
+      font-size: 0.24rem; }
+      .swrepp .orgi-sect .reason-app img {
+        width: 0.44rem;
+        height: 0.44rem;
+        background: none; }
+      .swrepp .orgi-sect .reason-app .img-apply {
+        display: -webkit-box;
+        -webkit-box-orient: horizontal; }
+        .swrepp .orgi-sect .reason-app .img-apply dl {
+          -webkit-box-flex: 1;
+          text-align: center; }
+      .swrepp .orgi-sect .reason-app p {
+        margin-top: 0.23rem;
+        color: #8c8c8c; }
+    .swrepp .orgi-sect .vip-level {
+      width: 100%;
+      height: 1.54rem;
+      background: #FFFFFF;
+      margin-top: 0.1rem;
+      padding: 0.3rem 0.3rem 0.4rem 0.3rem;
+      box-sizing: border-box; }
+      .swrepp .orgi-sect .vip-level p {
+        font-size: 0.28rem; }
+      .swrepp .orgi-sect .vip-level span {
+        display: block;
+        font-size: 0.24rem;
+        color: #ff712b;
+        padding-top: 0.2rem; }
+  .swrepp .orgi-foot {
+    width: 100%;
+    height: 1rem;
+    background: #ff712b;
+    text-align: center;
+    font-size: 0.30rem;
+    line-height: 1rem;
+    color: #FFFFFF;
+    font-weight: 400; }
+
+.mask {
+  width: 100%;
+  height: 100%;
+  background: #4c4c4c;
+  position: absolute;
+  padding-left: 0.66rem;
+  padding-right: 0.66rem;
+  box-sizing: border-box;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  display: none; }
+  .mask .vip-success {
+    width: 100%;
+    height: 4.3rem;
+    background: #ffffff;
+    border-top: 0.05rem solid #ff712b;
+    border-radius: 5px;
+    margin-top: 61%;
+    position: relative;
+    text-align: center; }
+    .mask .vip-success .back-off {
+      width: 0.3rem;
+      height: 0.3rem;
+      background: none;
+      position: absolute;
+      right: 0.36rem;
+      top: 0.3rem; }
+    .mask .vip-success .vip-img {
+      position: absolute;
+      left: 2.2rem;
+      top: 0.4rem;
+      width: 1.68rem;
+      height: auto;
+      background: none; }
+    .mask .vip-success .vip-shop {
+      margin-top: 1.9rem; }
+      .mask .vip-success .vip-shop p {
+        font-size: 0.36rem; }
+      .mask .vip-success .vip-shop span {
+        font-size: 0.28rem;
+        color: #666666;
+        display: block; }
+      .mask .vip-success .vip-shop button {
+        width: 1.9rem;
+        height: 0.7rem;
+        background: #ff712b;
+        margin-top: 0.4rem;
+        border: none;
+        outline: none;
+        font-size: 0.28rem;
+        color: #FFFFFF;
+        border-radius: 0.05rem;
+        box-shadow: 0.01rem 0.01rem 0.01rem #FF712B; }
+
+/*# sourceMappingURL=orgin.css.map */

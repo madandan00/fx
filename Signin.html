@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/myshop.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_404971_58eblf73vq11c3di.css" />
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div class="myshop">
+			<div class="signin">
+				<div class="todaysign">
+					<div class="orginrb">
+						<div class="whiteor">
+							<dl>
+								<dt>今日<span class="sign checkBtn">签到</span></dt>
+								<dd>10积分</dd>
+							</dl>
+						</div>
+					</div>
+					<img src="images/tixian_04.png" class="tixia" alt="" />
+					<p class="lianxu">已连续签到<span>30</span>天</p>
+					<span style="color: #FF712B;font-size: 0.24rem; display: block;text-align: center;" class="bb">签到日记</span>
+				</div>
+				<div class="daysing">
+					<ul>
+						<li><img src="images/five-sign_04.png"/></li>
+						<li><img src="images/tensign_06.png"/></li>
+						<li><img src="images/liwu_08.png"/></li>
+					</ul>
+				</div>
+				<div class="rule">
+				  <h4>签到规则</h4>
+				  <ul>
+				  	<li>1、当天签到所获得的积分实时累加，不清零</li>
+				  	<li>2、连续签到，获得积分加速，还可获得神秘礼物，如中断签到则
+                                           从5积分重新开始签到</li>
+				  	<li>3、当天签到所获得的积分实时累加，不清零</li>
+				  </ul>
+			    </div>
+			</div>
+		</div>
+		<div class="qiandosucc">
+			<img src="images/qiand_03.png"/>
+		</div>
+		<div class="tizhi">
+			<div class="hehe">
+				<div class="checkin" style="background: #FFFFFF;">
+
+		         </div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<script>
+	$(function(){
+	var a =	$(".sign").text();
+		$(".able-qiandao").on('tap',function(){
+			$(".qiandosucc").show();
+			if(a=="签到"){
+				$(".sign").text("已签");
+			}
+		})
+		$(".qiandosucc img").on('tap',function(){
+			$(".qiandosucc").hide();
+		})
+		if(a=="签到"){
+			$(".sign").css({"color":"#ff712b"})
+		}else{
+			$(".sign").css({"color":"#606060"})
+		}
+		$(".bb").on('tap',function(){
+			$(".tizhi").show();
+		})
+		$(".title i").on('tap',function(){
+			$(".tizhi").hide();
+		})
+	})
+	
+
+</script>
+<script>
+	(function($) {
+				var Checkin = function(ele, options) {
+					this.ele = ele;
+					this.opt = options;
+					this.defaults = {
+						width: 5.5,
+						height: 'auto',
+						background: '#f90',
+						radius: 10,
+						color: '#fff',
+						padding: 10,
+						dateArray: [1], // 假设已签到的天数+1
+					};
+					this.obj = $.extend({}, this.defaults, this.opt);
+				}
+				Checkin.prototype.init = function() {
+					var _self = this.ele,
+						html = '',
+						myDate = new Date(),
+						year = myDate.getFullYear(),
+						month = myDate.getMonth(),
+						day = myDate.getDate(),
+						weekText = ['日', '一', '二', '三', '四', '五', '六'];
+					_self.css({
+						width: this.obj.width + 'rem',
+						height: this.obj.height,
+						borderRadius: this.obj.radius,
+						color: this.obj.color,
+						padding: this.obj.padding
+					}).append("<div class='title'><p>" + year + '年' + (month + 1) + '月' + day + '日' + "</p><i class='iconfont icon-weibiaoti101'></i></div>");
+					$("<ul class='week clearfix'></ul><ul class='calendarList clearfix'></ul>").appendTo(_self);
+					for(var i = 0; i < 7; i++) {
+						_self.find(".week").append("<li>" + weekText[i] + "</li>")
+					};
+					for(var i = 0; i < 42; i++) {
+						html += "<li></li>"
+					};
+					_self.find(".calendarList").append(html);
+					var $li = _self.find(".calendarList").find("li");
+				/*	_self.find(".week li").css({
+						width: (_self.width() / 7) + 'px',
+						height: 50 + 'px',
+						borderRight: '1px solid #f90',
+						boxSizing: 'border-box',
+						background: '#b25d06'
+					});*/
+					/*$li.css({
+						width: (_self.width() / 7) + 'px',
+						height: 50 + 'px',
+						borderRight: '1px solid #f90',
+						borderBottom: '1px solid #f90',
+						boxSizing: 'border-box',
+						color: "#b25d06"
+					});*/
+					_self.find(".calendarList").find("li:nth-child(7n)").css('borderRight', 'none');
+					_self.find(".week li:nth-child(7n)").css('borderRight', 'none');
+					var monthFirst = new Date(year, month, 1).getDay();
+					var d = new Date(year, (month + 1), 0)
+					var totalDay = d.getDate(); //获取当前月的天数
+					for(var i = 0; i < totalDay; i++) {
+						$li.eq(i + monthFirst).html(i + 1);
+						$li.eq(i + monthFirst).addClass('data' + (i + 1))
+						if(isArray(this.obj.dateArray)) {
+							for(var j = 0; j < this.obj.dateArray.length; j++) {
+								if(i == this.obj.dateArray[j]) {
+									// 假设已经签到的
+									$li.eq(i + monthFirst).addClass('checked');
+								}
+							}
+						}
+					}
+					//$li.eq(monthFirst+day-1).css('background','#f7ca8e')
+					_self.find($(".data" + day)).addClass('able-qiandao');
+				}
+				var isChecked = false;
+				Checkin.prototype.events = function() {
+					var _self = this.ele;
+					var $li = _self.find(".calendarList").find("li");
+					$li.on('click', function(event) {
+						event.preventDefault();
+						/* Act on the event */
+						if($(this).hasClass('able-qiandao')) {
+							$(this).addClass('checked');
+							modal(_self);
+							isChecked = true;
+						}
+					});
+					var checkBtn = _self.find(".checkBtn");
+					checkBtn.click(function(event) {
+						modal(_self);
+						_self.find('.able-qiandao').addClass('checked');
+						isChecked = true;
+					});
+				}
+				var modal = function(e) {
+					var mask = e.parents().find(".mask");
+					var close = e.parents().find(".closeBtn");
+					if(mask && !isChecked) {
+						mask.addClass('trf');
+					} else {
+						return
+					};
+					close.click(function(event) {
+						event.preventDefault();
+						mask.removeClass('trf')
+					});
+					e.parents().find('.checkBtn').text("已签");
+				}
+				$.fn.Checkin = function(options) {
+					var checkin = new Checkin(this, options);
+					var obj = [checkin.init(), checkin.events()]
+					return obj
+				}
+				var isArray = function(arg) {
+					return Object.prototype.toString.call(arg) === '[object Array]';
+				};
+			})(jQuery);
+			// 插件调用
+			$(".checkin").Checkin();
+			// 元素居中显示，与插件无关，根本自己需要修改；
+</script>

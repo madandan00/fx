@@ -1,0 +1,85 @@
+@import url("public.css");
+html {
+  font-size: 13.333vw; }
+
+.Cashwidth {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0; }
+  .Cashwidth .Cash-sq {
+    width: 100%;
+    height: 3.82rem;
+    background: #ffffff;
+    text-align: center; }
+    .Cashwidth .Cash-sq img {
+      width: 1.03rem;
+      height: 1.03rem;
+      background: none;
+      margin-top: 0.95rem; }
+    .Cashwidth .Cash-sq .cashsq-ruo {
+      font-size: 0.3rem;
+      color: #303030;
+      margin-top: 0.5rem; }
+    .Cashwidth .Cash-sq .cash-day {
+      margin-top: 0.34rem;
+      font-size: 0.24rem;
+      color: #909090; }
+  .Cashwidth .Cash-bank {
+    width: 100%;
+    height: 3.11rem;
+    background: #ffffff;
+    margin-top: 0.1rem;
+    padding: 0 0.3rem 0 0.3rem;
+    box-sizing: border-box; }
+    .Cashwidth .Cash-bank ul li {
+      width: 100%;
+      height: 1.61rem;
+      background: none; }
+      .Cashwidth .Cash-bank ul li h3 {
+        font-weight: 400;
+        font-size: 0.25rem;
+        color: #606060;
+        padding-top: 0.39rem; }
+      .Cashwidth .Cash-bank ul li span {
+        line-height: 1rem;
+        font-size: 0.24rem;
+        margin-left: 0.56rem;
+        color: #303030; }
+        .Cash-bank input{
+        	border: none;
+        }
+      .Cashwidth .Cash-bank ul li:nth-child(1) {
+        border-bottom: 0.02rem solid #ff712b;
+        font-size: 0.03rem; }
+      .Cashwidth .Cash-bank ul li:nth-child(2) {
+        font-size: 0.03rem; }
+        .Cashwidth .Cash-bank ul li:nth-child(2) img {
+          width: 0.33rem;
+          height: 0.33rem;
+          background: none;
+          vertical-align: middle;
+          margin-bottom: 0.05rem;
+          margin-right: 0.1rem; }
+  .Cashwidth .cash-but {
+    width: 100%;
+    height: auto;
+    background: none;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    box-sizing: border-box;
+    margin-top: 0.9rem; }
+    .Cashwidth .cash-but span {
+      display: inline-block;
+      width: 100%;
+      height: 1rem;
+      background: #ff712b;
+      border-radius: 5px;
+      font-size: 0.32rem;
+      color: #fefefe;
+      border: none;
+      text-align: center;
+      line-height: 1rem; }
+
+/*# sourceMappingURL=Cashwithdrawa.css.map */

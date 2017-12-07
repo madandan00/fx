@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<title></title>
+		<link rel="stylesheet" href="__HOME__/css/public.css" />
+		<link rel="stylesheet" href="__HOME__/css/border1.css" />
+		<link rel="stylesheet" href="__HOME__/css/m-add-address.css" />
+		<link rel="stylesheet" href="__HOME__/css/hint.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_404971_58eblf73vq11c3di.css" />
+		<script type="text/javascript" src="__HOME__/js/public.js"></script>
+		<!--<script src="http://api.map.baidu.com/api?v=1.3" type="text/javascript"></script>-->
+	</head>
+
+	<body>
+		<form action="{:U('User/AddAddress')}" method='post'>
+			<div class="wrapper">
+				<!--编辑页面-->
+
+				<div class="box border1">
+					<div>
+						<label for="nc">姓名:</label>
+						<input type="text" value="" class="in" id="area" name='name'>
+					</div>
+				</div>
+				<div class="box border1">
+					<div>
+						<label for="nc">手机号:</label>
+						<input type="text" value="" class="in" id="detail" name='phone' required>
+					</div>
+				</div>
+				<div class="box border1">
+					<div>
+						<label for="nc">所在区域:</label>
+						<input type="text" value="" class="in" id="name" name='sheng' required>
+						<i class="iconfont icon-icons64x6455 " style="color: #ff712b;" id="mdd"></i>
+					</div>
+				</div>
+				<div class="box border1">
+					<div>
+						<label for="nc">详细地址:</label>
+						<input type="text" value="" class="in" maxlength="11" id="phone" name='address_content' required>
+					</div>
+				</div>
+				<div class="box border1">
+					<input value='' type='hidden' id='inputt'>
+					<div>
+						<span>设为默认地址</span>
+						<i class="iconfont icon-yuan choose "></i>
+
+					</div>
+				</div>
+
+			</div>
+			<div id="save">
+				<button>保存</button>
+			</div>
+			
+		</form>
+	</body>
+	<script type="text/javascript" src="__HOME__/js/zepto_1.1.3.js"></script>
+
+	<script>
+		//默认地址
+		$(".choose").on("click", function() {
+			if($(this).hasClass("icon-yuan")) {
+				$(".choose").removeClass("icon-chuangyikongjianICON_fuzhi-").addClass("icon-yuan");
+				$(this).removeClass("icon-yuan").addClass("icon-chuangyikongjianICON_fuzhi-");
+				$('#inputt').attr('name', 'key');
+				$('#inputt').val(1);
+
+			} else {
+				$(this).removeClass("icon-chuangyikongjianICON_fuzhi-").addClass("icon-yuan")
+				$('#inputt').removeAttr('name');
+				$('#inputt').removeAttr('value');
+			}
+		})
+	</script>
+	<!--<script type="text/javascript">
+		if(navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(function(p) {
+				var latitude = p.coords.latitude //纬度
+				var longitude = p.coords.longitude;
+				createmap(latitude, longitude);
+
+			}, function(e) { //错误信息
+				var aa = e.code + "\n" + e.message;
+				alert(aa);
+			});
+		}
+
+		function createmap(a, b) {
+			var map = new BMap.Map("mdd");
+			var point = new BMap.Point(b, a);
+			map.centerAndZoom(point, 20); //设置地图的中心点和坐标
+			Window.map = map; //将map变量存储在全局
+
+		}
+	</script>-->
+
+</html>
+<script type="text/javascript">
+</script>

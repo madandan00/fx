@@ -1,0 +1,186 @@
+.content {
+    overflow: hidden;
+}
+.order-info {
+    background: #fff;
+    margin-top: 0.1rem;
+    font-size: 12px;
+    padding: 0 0.32rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    .big-box {
+        padding-top: 0.25rem;
+        img {
+            width: 1.6rem;
+            height: 1.6rem;
+            float: left;
+            margin: 0.05rem 0.0575rem;
+            //margin-left: 0.115rem;
+        }
+    }
+    .order-Num {
+        height: 0.8rem;
+        span {
+            font-size: 0.26rem;
+            color: #3030;
+            line-height: 0.8rem;
+        }
+        i {
+            font-size: 0.26rem;
+            color: #ff712b;
+            line-height: 0.8rem;
+            float: right;
+        }
+    }
+    .good {
+        padding: 0.3rem 0;
+        overflow: hidden;
+        .left {
+            float: left;
+            width: 1.6rem;
+            height: 1.6rem;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .right {
+            float: left;
+            margin-left: 0.25rem;
+            width: 5rem;
+            height: 1.6rem;
+            position: relative;
+            .goods-name {
+                font-size: 0.32rem;
+                color: #303030;
+            }
+            .goods-feature {
+                font-size: 0.28rem;
+                color: #666;
+                line-height: 0.55rem;
+            }
+            .goods-price {
+                font-size: 0.32rem;
+                color: #FF712B;
+                position: absolute;
+                bottom: 0;
+            }
+            .number {
+                float: right;
+            }
+        }
+    }
+    .estimate-level {
+        width: 100%;
+        height: 1.1rem;
+        ul {
+            li {
+                line-height: 1.1rem;
+                width: 2rem;
+                float: left;
+                i {
+                    font-size: 0.36rem;
+                    line-height: 1.1rem;
+                    float: left;
+                }
+                span {
+                    font-size: 0.26rem;
+                    margin-left: 0.18rem;
+                    line-height: 1.1rem;
+                    float: left;
+                }
+            }
+        }
+    }
+    .estimate-txt {
+        position: relative;
+        height: 1.2rem;
+        .tip {
+            position: absolute;
+            left: 0.1rem;
+            top: 0.1rem;
+            z-index: 9;
+        }
+        textarea {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5.3rem;
+            height: 1.2rem;
+            background: #f9f9f9;
+            border: 1px solid #d0d0d0;
+            resize: none;
+            border-radius: 0.1rem;
+            padding: 0.1rem;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+        }
+    }
+    .add-pic {
+        .pic+.pic {
+            margin-left: 0.1rem;
+        }
+        p{
+            float: left;
+            margin-top: 0.9rem;
+        }
+        .pic {
+            float: left;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            width: 1.2rem;
+            height: 1.2rem;
+            font-size: 0.42rem;
+            line-height: 1.2rem;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            color: #bfbfbf;
+            background: #fff;
+            border: 1px dotted #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            input {
+                position: absolute;
+                width: 1.2rem;
+                height: 1.2rem;
+                right: 0;
+                top: 0;
+                opacity: 0;
+                filter:alpha(opacity=0);
+                cursor: pointer;
+            }
+        }
+    }
+}
+#tijiao {
+    width: 100%;
+    height: 1rem;
+    background: #ff712b;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 10px;
+    text-align: center;
+    span,
+    button {
+        width: 100%;
+        height: 1rem;
+        background: #ff712b;
+        font-size: 0.32rem;
+        color: #fff;
+        line-height: 1rem;
+        border: none;
+    }
+}

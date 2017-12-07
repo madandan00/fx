@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/bankcarad.css" />
+		<style>
+		
+		</style>
+	</head>
+	<body>
+		<div class="bankcard">
+			<div class="band-head">
+			<div class="bankid">
+				<p>信息智能加密，仅用于银行验证</p>
+				<ul>
+					<li><h3>卡类型</h3><span class="banktype">中国建设银行<i>储蓄卡</i></span></li>
+					<li><h3>银行卡号</h3><input type="text" value="" placeholder="请输入银行卡号" id="number"  maxlength="23" />
+					   <span id="bankyz"></span>
+					</li>
+				</ul>
+			</div>
+			<div class="moneyzi">
+				<div class="form-group">
+	                    <label>姓名</label>
+	                    <input type="text" name="pwd1" class="form-control" placeholder="请输入持卡人的姓名">
+	            </div>
+	            <div class="form-group">
+	                    <label>身份证号</label>
+	                    <input type="text" name="pwd2" id="shenfen" placeholder="请输入持卡人证件号" onblur="isCardNo()">
+	                    <span id="sf"></span>
+	            </div>
+	            <div class="form-group">
+	                    <label>手机号</label>
+	                    <input type="text" name="pwd1" id="phone" placeholder="请输入银行预留手机号" onblur="checkPhone()">
+	                    <span id="pho"></span>
+	            </div>
+	            <div class="form-group">
+	                    <label>开户行</label>
+	                    <input type="text" name="pwd1" class="templo" placeholder="请输入银行开户地">
+	            </div>
+			</div>
+			<div class="guanzhu">
+				<div class="inBorder" statu="true"></div>
+				<span>同意<i>《用户协议》</i></span>
+			</div>
+			</div>
+			<div class="nextspn">
+				<span>下一步</span>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script>
+           /*控制银行卡号*/
+	       var t=document.getElementById("number");
+	       var banyz=document.getElementById("bankyz");
+			t.onkeydown=change;
+			t.onkeyup=change;
+			t.onkeypress=change;
+			function change(){
+			this.value=this.value.replace(/(\d{4})(?=[^\s])/,'$1 ');
+			}
+			/*验证银行卡*/
+			/*function isBank(){
+				var bank=document.getElementById("number").value;
+				var banyz=document.getElementById("bankyz");
+				if((!/^(\d{16}|\d{19})$/.test(bank)))
+				{
+				   bankyz.innerHTML="格式不正确";
+				}else{
+					 bankyz.innerHTML="";
+			        var img = document.createElement("img");
+				　　　img.setAttribute("id", "newImg");
+				　　　　//设置 img 图片地址
+				　　　img.src = "images/12312.png";
+					bankyz.appendChild(img);　
+			        return true; 
+				}
+			}*/
+			/*正则验证身份证*/
+			function isCardNo()  
+			{  
+			    var sfid = document.getElementById('shenfen').value;
+			    var sf =document.getElementById("sf");
+			    /*最后一位可能是x*/
+			   if((/(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/.test(sfid)))  
+			   {  
+			    sf.innerHTML="";
+		        var img = document.createElement("img");
+			　　　img.setAttribute("id", "newImg");
+			　　　　//设置 img 图片地址
+			　　　img.src = "images/12312.png";
+				sf.appendChild(img);　
+		        return true; 
+			   }else{
+			   	sf.innerHTML="格式不正确";
+			   	return false;
+			   }
+		   }
+		  /* 手机号码*/
+		 function checkPhone(){ 
+		    var phone = document.getElementById('phone').value;
+		    var spanh =document.getElementById("pho");
+		    if((/^1(3|4|5|7|8)\d{9}$/.test(phone))){ 
+		    	spanh.innerHTML="";
+		        var img = document.createElement("img");
+			　　　img.setAttribute("id", "newImg");
+			　　　img.src = "images/12312.png";
+				spanh.appendChild(img);　
+		        return true; 
+		    }else{
+		    	spanh.innerHTML="格式不正确";
+		    	return false;
+		    }
+		}
+		/*同意协议*/
+		$(".inBorder").click(function(){
+			var _statu=$(this).attr("statu");
+			if($(this).attr("statu")=="true"){
+				$(this).html("<img src='images/radio.png'>");
+				$(this).attr("statu","false");
+			}else if($(this).attr("statu")=="false"){
+				$(this).html("");
+				$(this).attr("statu","true");
+			}
+		})
+		
+	    $(".nextspn").tap(function(){
+	    	if($(".inBorder").attr("statu")=="true"){
+	    		alert("请同意协议");
+	    	}else{
+	    		alert("跳到下一个页面")
+	    	}
+	    })
+</script>
+ 

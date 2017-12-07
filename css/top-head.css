@@ -1,0 +1,208 @@
+@import url("public.css");
+html {
+  font-size: 13.333vw; }
+
+.top-head {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0; 
+  overflow: auto;}
+  .top-head::-webkit-scrollbar {
+      width: 0px; }
+  .top-head .prompting {
+    width: 100%;
+    height: 0.65rem;
+    background: none;
+    font-size: 0.24rem;
+    line-height: 0.64rem;
+    padding-left: 0.3rem;
+    box-sizing: border-box; }
+  .top-head .balance {
+    width: 100%;
+    height: 1rem;
+    background: #ffffff;
+    padding: 0rem 0.3rem 0 0.3rem;
+    box-sizing: border-box;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    line-height: 1rem; }
+    .top-head .balance p {
+      font-size: 0.3rem;
+      color: #666666; }
+    .top-head .balance .balan {
+      font-size: 0.28rem;
+      margin-left: 0.5rem;
+      display: block;
+      color: #303030;
+      -webkit-box-flex: 3; }
+      .top-head .balance .balan i {
+        font-size: 0.22rem; }
+    .top-head .balance .balan-rig {
+      font-size: 0.3rem; }
+      .top-head .balance .balan-rig a {
+        color: #666666; }
+      .top-head .balance .balan-rig span {
+        display: inline-block;
+        width: 0.15rem;
+        height: 0.15rem;
+        /*background: red;*/
+        border: 0.02rem solid #666666;
+        transform: rotateZ(45deg);
+        border-bottom: none;
+        border-left: none;
+        vertical-align: middle; }
+  .top-head .amount {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    margin-top: 0.1rem;
+    padding: 0.35rem 0.3rem 0.3rem  0.3rem;
+    box-sizing: border-box; }
+    .top-head .amount p {
+      font-size: 0.28rem;
+      color: #666666; }
+    .top-head .amount .amount-smal {
+    	/*display: -webkit-box;
+     -webkit-box-orient: horizontal;*/
+      width: 100%;
+      height: 0.8rem;
+      background: #ffffff;
+      border-bottom: 0.02rem solid #ff712b;
+      margin-top: 0.17rem;
+      line-height: 0.8rem;
+      margin-bottom: 0.3rem; }
+      .amount-smal p{
+      	float: left;
+      	margin-left: 0.57rem;
+      }
+      .amount-smal p input{
+      	width: 2rem;
+      	border: none;
+      	font-size: 0.3rem;
+      	color: #303030;
+      }
+      .amount-smal span{
+      	font-size: 0.28rem;
+      	color: #909090;
+      	display: block;
+      	float: right;
+      }
+    .top-head .amount .Howmuchimpact {
+      width: 100%;
+      height: auto;
+      background: none; }
+      .top-head .amount .Howmuchimpact dl {
+        width: 2.2rem;
+        height: 1.3rem;
+        background: none;
+        border: 0.01rem solid #ff712b;
+        border-radius: 0.1rem;
+        float: left;
+        text-align: center; }
+        .top-head .amount .Howmuchimpact dl dt {
+          font-size: 0.3rem;
+          color: #303030;
+          padding-top: 0.16rem; }
+        .top-head .amount .Howmuchimpact dl dd {
+          -webkit-text-size-adjust: none;
+          font-size: 0.24rem;
+          color: #aaaaaa;
+          margin-top: 0.2rem; }
+        .top-head .amount .Howmuchimpact dl:nth-child(2) {
+          margin-left: 0.08rem;
+          margin-right: 0.08rem; }
+        .top-head .amount .Howmuchimpact dl:nth-child(4) {
+          margin-top: 0.1rem; }
+        .top-head .amount .Howmuchimpact dl:nth-child(5) {
+          margin-top: 0.1rem;
+          margin-left: 0.08rem; }
+  .top-head .amou-type {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    padding-left: 0.3rem;
+    box-sizing: border-box;
+    margin-top: 0.1rem; }
+    .top-head .amou-type ul li {
+      width: 100%;
+      height: 1.12rem;
+      background: none;
+      border-bottom: 1px solid #bfbfbf;
+      line-height: 1.12rem;
+      font-size: 0.28rem;
+      color: #666666; }
+      .top-head .amou-type ul li i {
+        font-size: 0.52rem;
+        vertical-align: middle;
+        margin-right: 0.2rem; }
+      .top-head .amou-type ul li img {
+        width: 0.6rem;
+        height: 0.34rem;
+        background: none;
+        vertical-align: middle;
+        margin-right: 0.2rem; }
+    .top-head .amou-type ul .li-stree {
+      border: none; }
+  .top-head .zhifu_l {
+    margin-top: 1.4rem;
+    display: inline-block;
+    width: 100%;
+    height: 1rem;
+    background: #ff712b;
+    font-size: 0.30rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #FFFFFF; }
+	label {
+				  color: #666;
+				  cursor: pointer;
+				  position: relative;
+				  float: right;
+				  margin-right: 0.1rem;
+				}
+				label .all {
+				  position: absolute;
+				  left: 0px;
+				  top: 0px;
+				  opacity: 0;
+				}
+				label .one {
+				  position: absolute;
+				  left: 0px;
+				  top: 10px;
+				  opacity: 0;
+				}
+				label i {
+				  margin-right: 10px;
+				  font-size: 0.12em;
+				  font-style: normal;
+				  display: inline-block;
+				  width: 0.32rem;
+				  height: 0.32rem;
+				  text-align: center;
+				  line-height: 0.12rem;
+				  color: #fff;
+				  border: #818181 1px solid;
+				}
+				input[type="checkbox"],
+				input[type="radio"] {
+				  display: none;
+				}
+				input[type="radio"] + i {
+				  border-radius: 50%;
+				}
+				input[type="checkbox"]:checked + i,
+				input[type="radio"]:checked + i {
+				  background: #ff712b;
+				}
+				input[type="checkbox"]:disabled + i,
+				input[type="radio"]:disabled + i {
+				  border-color: #ccc;
+				}
+				input[type="checkbox"]:checked:disabled + i,
+				input[type="radio"]:checked:disabled + i {
+				  background: #ccc;
+				}
+/*# sourceMappingURL=top-head.css.map */

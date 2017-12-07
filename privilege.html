@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>优惠政策</title>
+		<link rel="stylesheet" href="css/privilege.css" />
+	</head>
+	<body>
+		<div class="priviege">
+			<div class="privitop">
+				<dl class="active">
+					<dt><img src="images/jsjs_03.png" alt="" /></dt>
+					<dd>店铺特惠</a></dd>
+					<span></span>
+				</dl>
+				<dl>
+					<dt><img src="images/happy_05.jpg" alt="" /></dt>
+					<dd>生日惊喜</dd>
+					<span></span>
+				</dl>
+				<dl>
+					<dt><img src="images/wenji_07.png"/></dt>
+					<dd>评论奖励</dd>
+					<span></span>
+				</dl>
+				<dl>
+					<dt><img src="images/hjhuh_09.jpg"/></dt>
+                    <dd>包邮奖励</dd>
+                    <span></span>
+				</dl>
+			</div>
+			<div class="contenter">
+				<div class="uqnbudiv">
+				  <div class="title">
+					<h4>店铺特惠</h4>
+					<p>会员好礼送不停，特惠不断，惊喜不断，快来抢购。</p>
+					<img src="images/shopth_16.png" alt="" />
+				   </div>
+				   <div class="nav-tiel">
+				    	<p><img src="images/jinnggao_03.jpg" alt="" />特权介绍</p>
+				    	<dl>
+				    		<dt>1.权益说明：</dt>
+				    		<dd>会员可享受店铺特惠的所有商品，及限时特价等。</dd>
+				    	</dl>
+				    	<dl>
+				    		<dt>2.使用说明：</dt>
+				    		<dd>特惠商品我们将会自动识别您的身份，将进行特惠，更多精彩特权敬请期待。</dd>
+				    	</dl>
+				   </div>
+				</div>
+				<div class="happey" style="display: none;">
+					<div class="title">
+					<h4>生日惊喜</h4>
+					<p>生日享神秘大咖祝福，并赠送50积分。</p>
+					<img src="images/happy_03.jpg" alt="" />
+				   </div>
+				   <div class="nav-tiel">
+				    	<p><img src="images/jinnggao_03.jpg" alt="" />特权介绍</p>
+				    	<dl>
+				    		<dt>1.权益说明：</dt>
+				    		<dd>完善生日资料后，在生日周期内普通会员及以上会员将获得惊喜生日礼包。</dd>
+				    	</dl>
+				    	<dl>
+				    		<dt>2.使用说明：</dt>
+				    		<dd>生日前一周之生日当天可领取，更多精彩特权敬请期待。</dd>
+				    	</dl>
+				   </div>
+				</div>
+				<div class="pinglun" style="display: none;">
+					<div class="title">
+					<h4>评论奖励</h4>
+					<p class="huiyuande">会员等级不同，评价订单奖励积分不同，等级越高，奖励越高。</p>
+					<img src="images/liwu_03.jpg" alt="" class="aaa"/>
+				   </div>
+				   <div class="nav-tiel">
+				    	<p><img src="images/jinnggao_03.jpg" alt="" />特权介绍</p>
+				    	<dl>
+				    		<dt>1.权益说明：</dt>
+				    		<dd>商城会员成功提交评论信息即获得相应成长值奖励与积分奖励。</dd>
+				    	</dl>
+				    	<dl>
+				    		<dt>2.使用说明：</dt>
+				    		<dd>商品购买后，如有邮费即可使用免邮礼券包，更多精彩特权敬请期待。</dd>
+				    	</dl>
+				   </div>
+				</div>
+				<div class="baoyou" style="display: none;">
+					<div class="title">
+					<h4>包邮礼券</h4>
+					<p>会员即可享包邮，并赠送相应礼券</p>
+					<img src="images/hhhehe_03.jpg" alt="" />
+				   </div>
+				   <div class="nav-tiel">
+				    	<p><img src="images/jinnggao_03.jpg" alt="" />特权介绍</p>
+				    	<dl>
+				    		<dt>1.权益说明：</dt>
+				    		<dd>会员专享每月免邮礼券包。</dd>
+				    	</dl>
+				    	<dl>
+				    		<dt>2.使用说明：</dt>
+				    		<dd>商品购买后，如有邮费即可使用免邮礼券包，更多精彩特权敬请期待。</dd>
+				    	</dl>
+				   </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script>
+	function getvl(name) { 
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+		var r = window.location.search.substr(1).match(reg);
+		//console.log(r)
+		if (r != null) return unescape(r[2]); return null; 
+		} 
+		var pid = getvl('date-id');
+	    if(pid=="2"){
+	       $(".privitop dl:eq(1)").addClass("active").siblings().removeClass("active");
+	       $(".uqnbudiv").hide();
+	       $(".happey").show();
+	    }
+		if(pid=="3"){
+	       $(".privitop dl:eq(2)").addClass("active").siblings().removeClass("active");
+	       $(".uqnbudiv").hide();
+	       $(".pinglun").show();
+	    }
+		if(pid=="4"){
+	       $(".privitop dl:eq(3)").addClass("active").siblings().removeClass("active");
+	       $(".uqnbudiv").hide();
+	       $(".baoyou").show();
+	    }
+</script>

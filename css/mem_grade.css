@@ -1,0 +1,248 @@
+.overall{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #f0f0f0;
+}
+.top{
+	background-image: url("../img/background.jpg");
+	background-repeat:no-repeat;
+	background-size: 100% 4.07rem;
+	border: none;
+	background-position: 0px 0px;
+	width: 100%;
+	height: 4.07rem;
+	padding-top: 0.3rem;
+	box-sizing: border-box;
+}
+.silver_title{
+	height: 0.6rem;
+	width: 1.98rem;
+	background-color: #ffb46a;
+	padding-left: 0.32rem;
+	padding-top: 0.19rem;
+	border-radius:0px 30px 30px 0px;
+}
+.img_typeface{
+	font-size: 0.24px;
+	color: white;
+}
+.strip_common{
+	width: 100%;
+	height: 0.08rem;
+	margin-top: 1.9rem;
+	background-color: #ffc48a;
+}
+.one{
+	float: left;
+	width: 1.50rem;
+	height: 100%;
+
+}
+.two{
+	float: left;
+	width: 1.50rem;
+	height: 100%;
+}
+.three{
+	float: left;
+	width: 1.50rem;
+	height: 100%;
+}
+.fore{
+	float: left;
+	width: 1.50rem;
+	height: 100%;
+}
+.five{
+	float: left;
+	width: 1.50rem;
+	height: 100%;
+}
+.circle_common{
+	width: 0.30rem;
+	height: 0.30rem;
+	border-radius:50%;
+	background-color: #ffc48a;
+	position: absolute;
+	margin-top: -0.21rem;
+	margin-left: 0.4rem;
+}
+.circle_bronze{
+	width: 0.30rem;
+	height: 0.30rem;
+	border-radius:50%;
+	background-color: #ffc48a;
+	position: absolute;
+	margin-top: -0.21rem;
+	margin-left: 2rem;
+}
+.circle_gold{
+	width: 0.30rem;
+	height: 0.30rem;
+	border-radius:50%;
+	background-color: #ffc48a;
+	position: absolute;
+	margin-top: -0.4rem;
+	margin-left: 5.2rem;
+}
+.circle_jewel{
+	width: 0.30rem;
+	height: 0.30rem;
+	border-radius:50%;
+	background-color: #ffc48a;
+	position: absolute;
+	margin-top: -0.4rem;
+	margin-left: 6.79rem;
+}
+.zero{
+	color: #ffc995;
+	font-size: 0.24rem;
+	margin-top: -1.58rem;
+	margin-left: 0.48rem;
+}
+.six_hundred{
+	color: #ffc995;
+	font-size: 0.24rem;
+	margin-top: -0.36rem;
+	margin-left: 1.94rem;
+}
+.three_thousand{
+	color: #ffc995;
+	font-size: 0.24rem;
+	margin-top: -0.36rem;
+	margin-left: 5.05rem;
+}
+.five_thousand{
+	color: #ffc995;
+	font-size: 0.24rem;
+	margin-top: -0.36rem;
+	margin-left: 6.63rem;
+}
+.circle_silver{
+	height: 1.8rem;
+	width: 1.8rem;
+	border-radius:50%;
+	background-color: #ffc48a;
+	margin-top: -1.6rem;
+	margin-left: 2.85rem;
+}
+.common{
+	color: #ffc48a;
+	font-size: 0.24rem;
+	margin-top: 0.35rem;
+	margin-left: 0.3rem;
+}
+.bronze{
+	color: #ffc48a;
+	font-size: 0.24rem;
+	margin-top: -0.35rem;
+	margin-left: 1.88rem;
+}
+.silver{
+	color: #ffc48a;
+	font-size: 0.24rem;
+	margin-top: -0.35rem;
+	margin-left: 3.43rem;
+}
+.gold{
+	color: #ffc48a;
+	font-size: 0.24rem;
+	margin-top: -0.35rem;
+	margin-left: 5.1rem;
+}
+.diamond{
+	color: #ffc48a;
+	font-size: 0.24rem;
+	margin-top: -0.36rem;
+	margin-left: 6.63rem;
+}
+.circle_silver_1{
+	position: absolute;
+	height: 1.56rem;
+	width: 1.56rem;
+	border-radius:50%;
+	background-color: #ffe2c5;
+	margin-top: 0.12rem;
+	margin-left: 0.12rem;
+}
+.circle_silver_main{
+	position: absolute;
+	width: 1.4rem;
+	height: 1.4rem;
+	border-radius:50%;
+	background-color:#ffffff;
+	
+	margin-top: 0.08rem;
+	margin-left: 0.08rem;
+}
+.silver_table{
+	margin-top: 0.3rem;
+	margin-left: 0.29rem;
+}
+.silver_tr{
+	font-size: 0.36rem;
+	color: #ff932a;
+}
+.silver_tr_char{
+	color: #606060;
+	font-size: 0.24rem;
+}
+.silver_tr_char{
+	vertical-align:top;
+}
+.silver_tr{
+	vertical-align:bottom;
+}
+.mem_grade{
+	width: 100%;
+	height: 2.01rem;
+	margin-top: 0.21rem;
+	border: none;
+	background-color: #ffffff;
+}
+.mem_grade{
+	padding-top: 0.25rem;
+}
+.mem_title{
+	padding-left: 0.32rem;
+	font-size: 0.3rem;
+}
+.title_des{
+	padding-left: 0.32rem;
+	padding-right:  0.32rem;
+	font-size: 0.24rem;
+	margin-top: 0.25rem;
+}
+.mem_growth{
+	width: 100%;
+	height: 5.74rem;
+	border: none;
+	margin-top: 0.09rem;
+	background: url("../img/mad1_02.jpg") no-repeat;
+	background-size: 100% auto;
+	
+}
+.growth_abate{
+	height: 1.84rem;
+	width: 100%;
+	background-color: white;
+	margin-top: 0.12rem;
+}
+.mem_down{
+	font-size: 0.3rem;
+	padding-left: 0.32rem;
+	padding-top: 0.25rem;
+}
+.down_des{
+	padding-left: 0.32rem;
+	padding-right:  0.32rem;
+	font-size: 0.24rem;
+	margin-top: 0.2rem;
+}
+.size{
+	font-size: 0.24rem;
+	color: white;
+	margin-left: 2.28rem;
+}

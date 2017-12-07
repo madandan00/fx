@@ -1,0 +1,124 @@
+@import url("reset.css");
+html {
+  font-size: 13.333vw; }
+
+.containter {
+  width: 100%;
+  height: 100%;
+  background: #eeeeee; }
+
+.containter {
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+  .containter .sq-apply {
+    width: 100%;
+    height: 0.88rem;
+    background: #303030;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    line-height: 0.88rem;
+    padding-left: 0.3rem;
+    box-sizing: border-box; }
+    .containter .sq-apply .back-link .back-app {
+      display: inline-block;
+      width: 0.2rem;
+      height: 0.2rem;
+      background: none;
+      border: 2px solid #FFFFFF;
+      transform: rotateZ(45deg);
+      border-top: none;
+      border-right: none;
+      vertical-align: middle;
+      margin-top: -0.05rem; }
+    .containter .sq-apply .back-link a {
+      color: #FFFFFF;
+      font-size: 0.16rem;
+      font-weight: 400; }
+    .containter .sq-apply h3 {
+      -webkit-box-flex: 1;
+      font-size: 0.16rem;
+      color: #FFFFFF;
+      text-align: center;
+      margin-right: 1.2rem;
+      font-weight: 450; }
+  .containter .sq-sect {
+    -webkit-box-flex: 1;
+    overflow-y: auto; }
+    .containter .sq-sect::-webkit-scrollbar {
+      width: 0px; }
+    .containter .sq-sect .qqyn-vip {
+      margin-top: 0.05rem;
+      width: 100%;
+      height: 1.35rem;
+      background: #FFFFFF;
+      padding-left: 0.3rem;
+      box-sizing: border-box; }
+      .containter .sq-sect .qqyn-vip h3 {
+        font-size: 0.16rem;
+        padding-top: 0.2rem;
+        box-sizing: border-box;
+        font-weight: 400; }
+      .containter .sq-sect .qqyn-vip p {
+        margin-top: 0.1rem;
+        font-size: 0.12rem;
+        color: #ff712b; }
+        .containter .sq-sect .qqyn-vip p span {
+          font-size: 0.12rem;
+          color: #666666;
+          margin-right: 0.24rem; }
+    .containter .sq-sect .sq-vip {
+      margin-top: 0.05rem;
+      width: 100%;
+      height: 1.97rem;
+      background: #FFFFFF;
+      padding-left: 0.3rem;
+      box-sizing: border-box; }
+      .containter .sq-sect .sq-vip h3 {
+        font-size: 0.14rem;
+        padding-top: 0.15rem; }
+      .containter .sq-sect .sq-vip ul {
+        margin-top: 0.1rem; }
+        .containter .sq-sect .sq-vip ul li {
+          margin-top: 0.1rem;
+          font-size: 0.12rem;
+          color: #666666; }
+    .containter .sq-sect .money-fp {
+      margin-top: 0.05rem;
+      width: 100%;
+      height: 3.95rem;
+      background: #FFFFFF;
+      padding-left: 0.3rem;
+      padding-right: 0.3rem;
+      box-sizing: border-box; }
+      .containter .sq-sect .money-fp h3 {
+        font-size: 0.14rem;
+        color: #333333;
+        padding-top: 0.1rem; }
+      .containter .sq-sect .money-fp ul {
+        font-size: 0.12rem;
+        color: #666666;
+        margin-top: 0.1rem; }
+        .containter .sq-sect .money-fp ul li {
+          display: inline-block;
+          margin-top: 0.1rem; }
+    .containter .sq-sect .interpret {
+      margin-top: 0.05rem;
+      width: 100%;
+      height: 2.65rem;
+      background: #FFFFFF;
+      padding-left: 0.3rem;
+      box-sizing: border-box; }
+      .containter .sq-sect .interpret h3 {
+        font-size: 0.14rem;
+        color: #333333;
+        padding-top: 0.17rem; }
+      .containter .sq-sect .interpret ul {
+        font-size: 0.12rem;
+        color: #666666;
+        margin-top: 0.17rem; }
+        .containter .sq-sect .interpret ul li {
+          margin-top: 0.14rem; }
+          
+          
+
+/*# sourceMappingURL=Vipxq.css.map */

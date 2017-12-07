@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的余额</title>
+		<link rel="stylesheet" href="css/bankwith.css" />
+	</head>
+	<body>
+		<div class="bankwith">
+			<div class="cash-back">
+				<img src="images/backgout.png" class="back-ug" alt="" />
+				<div class="cash-money">
+					<span>200<i class="yuan">元</i></span>
+				</div>
+				<img src="images/people.png" class="peo-img" alt="" />
+				<a href="top-up.html">
+				<dl>
+					<dt><img src="images/pngjife_03.png"/></dt>
+					<dd><a href="#">充值</a></dd>
+				 </dl>
+				</a>
+			</div>
+			<div class="banktitle">
+				<ul>
+					<li class="bacj">消费明细</li>
+					<li class="czx">充值记录</li>
+				</ul>
+			</div>
+			<div class="consumption">
+				<dl>
+					<dt>消费</dt>
+					<dd>2017.08.15<span>17:00:00</span></dd>
+					<p><i>-</i>￥50</p>
+				</dl>
+				<dl>
+					<dt>消费</dt>
+					<dd>2017.08.15<span>17:00:00</span></dd>
+					<p><i>-</i>￥50</p>
+				</dl>
+				<dl>
+					<dt>充值</dt>
+					<dd>2017.08.15<span>17:00:00</span></dd>
+					<p><i>+</i>￥50</p>
+				</dl>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script>
+	$(function(){
+		$(".banktitle li").tap(function(){
+			$(this).addClass("bacj").siblings().removeClass("bacj");
+		})
+	})
+</script>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>订单详情</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<script type="text/javascript" src="js/public.js"></script>
+		<link rel="stylesheet" href="css/border1.css" />
+		<link rel="stylesheet" href="css/m-order-detail.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_404971_nz3odxz5yc2wewmi.css" />
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="content" >
+			<div class="order-Nums border1" style="margin-top: 0.1rem;">
+				<span>订单编号：{$select[0][0]['order_number']}</span>
+			</div>
+			<div class="order-Nums ">
+				<span>应付总额：￥100.0</span>
+				<!--<?php
+					if ($select[0][0]['orderstatus']==0) {
+				?>-->
+				<strong>立即付款</strong>
+				<!--<?php
+					}
+				?>-->
+			</div>
+			<div class="order-info">
+				<div class="order-Num border1">
+					<span>共{$select[0][0]['quantity']}件</span><i>
+							<!--<?php
+								if ($select[0][0]['orderstatus']==0) {
+									echo "待付款";
+								}elseif ($select[0][0]['orderstatus']==1) {
+									echo "待发货";
+								}elseif ($select[0][0]['orderstatus']==2) {
+									echo "待收货";
+								}elseif ($select[0][0]['orderstatus']==3) {
+									echo "待评价";
+								}
+							?>-->
+					</i>
+				</div>
+				<div class="box">
+					<!--<foreach name='select[1]' item='s'>-->
+					<div class="good-info border1">
+						<div class="good clearfix">
+							<div class="left">
+								<img src="__ADMIN__/{$s['goods_photo']}" />
+							</div>
+							<div class="right">
+								<p><span class="goods-name">{$s['goods_name']}</span><i class="number">x{$s['quantity']}</i></p>
+								<p class="goods-feature">{$s['goods_spec_key']}</p>
+								<p class="goods-price"><span style="font-size: 0.22rem;">￥</span><span>{$s['goods_price']}</span></p>
+							</div>
+						</div>
+					</div>	
+						
+						<!--<?php
+							if (count($select[1])>2) {
+								$number = count($select[1])-2;
+						?>-->
+					<div class="more down" data-id='{$number}'>展开其余{$number}件商品</div>
+					<!--<?php
+						}
+					?>-->
+					<!--</foreach>-->
+				</div>
+			</div>
+			<div class="bill">
+				<p><span>商品金额&nbsp;:&nbsp;</span><i>¥{$select[0][0]['order_money']}</i></p>
+				<p><span>优惠券&nbsp;:&nbsp;</span><i>-¥{$select[0][0]['coupon']}</i></p>
+				<p><span>快递费&nbsp;:&nbsp;</span><i>¥{$select[0][0]['freight']}</i></p>
+				<p><span style="font-size: 0.28rem;color: #303030;">实付总额&nbsp;:&nbsp;</span><i style="font-size: 0.28rem;color: #ff712b;">¥{$select[0][0]['actualpayment']}</i></p>
+			</div>
+			<div class="address clearfix"  style="margin-top: 0.1rem;">
+				<div class="ico">
+					<i class="iconfont icon-unie609"></i>
+				</div>
+				<div class="address-info">
+					<p><span>收货人&nbsp;:&nbsp;</span><span>23</span><span style="float: right;">84555656599</span></p>
+					<p><span>收货地址&nbsp;:&nbsp;</span><span>{$select[0][0]['consigneeaddress']}</span></p>
+				</div>
+			</div>
+			<div class="delivery-info" style="margin-top: 0.1rem;">
+				<!--<p><span>支付方式&nbsp;:&nbsp;</span><span><?php if ($select[0][0]['payment']==0) {
+					echo "银联";
+				}elseif ($select[0][0]['payment']==1) {
+					echo "微信";
+				}elseif ($select[0][0]['payment']==2) {
+					echo "支付宝";
+				}?></span></p>-->
+				<p><span>配送方式&nbsp;:&nbsp;</span><span>快递</span></p>
+				<p><span>预计送达时间&nbsp;:&nbsp;</span>下单后的一至两天<span></span></p>
+				<p><span>下单时间&nbsp;:&nbsp;</span><span>{$select[0][0]['order_addtime']}</span></p>
+				<p><span>订单备注&nbsp;:&nbsp;</span><span>{$select[0][0]['order_comment']}</span></p>
+				
+			</div>
+			<!--<?php
+				if ($select[0][0]['orderstatus']==0) {
+			?>-->
+			<div class="pay">
+				<span>立即支付</span>
+			</div>
+			<!--<?php
+				}
+			?>-->
+
+	</body>
+	<script type="text/javascript" src="__HOME__/js/zepto_1.1.3.js"></script>
+	<script>
+		$(".more").on("click", function() {
+			if($(this).hasClass("down")) {
+				$(this).removeClass("down").addClass("up")
+				$(this).html('收起')
+				$(".box").css("height", "auto");
+			} else {
+				var nu = $(this).attr('data-id');
+				$(this).removeClass("up").addClass("down")
+				$(this).html('展开其余'+nu+'件商品')
+				$(".box").css("height", "4.4rem");
+			}
+
+		})
+	</script>
+
+</html>

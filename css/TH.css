@@ -1,0 +1,185 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.box {
+  font-size: 12px;
+  height: 0.7rem;
+  background: #fff;
+  padding: 0 0.32rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.box span {
+  font-size: 0.26rem;
+  line-height: 0.7rem;
+  color: #303030;
+}
+.box strong {
+  font-size: 0.26rem;
+  line-height: 0.7rem;
+  float: right;
+}
+
+.estimate-txt {
+  font-size: 12px;
+  padding: 0 0.32rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: #fff;
+  position: relative;
+  width: 100%;
+  height: 1.5rem;
+}
+.estimate-txt .tip {
+  position: absolute;
+  right: 0.42rem;
+  bottom: 0.1rem;
+  z-index: 9;
+  color: #999;
+}
+.estimate-txt textarea {
+  width: 100%;
+  height: 1.5rem;
+  background: #f9f9f9;
+  border: 1px solid #d0d0d0;
+  resize: none;
+  border-radius: 0.1rem;
+  padding: 0.1rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+.add-pic {
+  background: #fff;
+  font-size: 12px;
+  padding: 0 0.32rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.add-pic .pic + .pic {
+  margin-left: 0.1rem;
+}
+.add-pic .pic {
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 0.42rem;
+  line-height: 1.2rem;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  color: #bfbfbf;
+  background: #fff;
+  border: 1px dotted #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.add-pic .pic img {
+  width: 100%;
+  height: 100%;
+}
+.add-pic .pic input {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
+
+.mark {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(1, 1, 1, 0.5);
+  display: none;
+}
+
+.reasons {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  font-size: 12px;
+  z-index: 1001;
+  display: none;
+}
+.reasons .sure {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 100%;
+  height: 1rem;
+  background: #ff712b;
+  font-size: 0.32rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1rem;
+  border: none;
+}
+.reasons ul li {
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  padding: 0 0.32rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  color: #303030;
+}
+.reasons ul span {
+  float: left;
+}
+.reasons ul i {
+  float: right;
+  font-size: 0.3rem;
+}
+.reasons ul .icon-yuan {
+  color: #bfbfbf;
+}
+.reasons ul .icon-chuangyikongjianICON_fuzhi- {
+  color: #ff712b;
+}
+
+.save {
+  width: 100%;
+  height: 1rem;
+  background: #ff712b;
+  position: fixed;
+  bottom: 0;
+  font-size: 10px;
+  text-align: center;
+}
+.save span,
+.save button {
+  width: 100%;
+  height: 1rem;
+  background: #ff712b;
+  font-size: 0.32rem;
+  color: #fff;
+  line-height: 1rem;
+  border: none;
+}

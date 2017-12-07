@@ -1,0 +1,178 @@
+.wrapper {
+  overflow: hidden;
+  padding-bottom: 1.1rem;
+}
+
+.tit b {
+  font-weight: normal;
+  color: #333;
+  float: right;
+  font-size: 0.26rem;
+  line-height: 0.88rem;
+}
+
+.mark {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 1000;
+  display: none;
+}
+
+.listBox {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: #fff;
+  margin-top: 0.1rem;
+}
+
+.list {
+  background: #fff;
+  width: 100%;
+  font-size: 14px;
+}
+.list .top {
+  padding: 0.1rem 0.32rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.list .top .one {
+  height: 0.86rem;
+}
+.list .top .one div {
+  width: 50%;
+  float: left;
+}
+.list .top .one .left span,
+.list .top .one .right span {
+  font-size: 0.32rem;
+  color: #303030;
+  height: 0.7rem;
+  line-height: 0.86rem;
+  text-align: right;
+}
+.list .top .one .right {
+  text-align: right;
+}
+.list .top .two {
+  height: 0.7rem;
+  background: #fff;
+}
+.list .top .two p {
+  font-size: 0.28rem;
+  color: #666;
+  color: #303030;
+  line-height: 0.7rem;
+}
+.list .bot {
+  padding: 0 0.32rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 0.9rem;
+}
+.list .bot div {
+  height: 0.9rem;
+  width: 50%;
+  float: left;
+}
+.list .bot div strong {
+  font-weight: normal;
+}
+.list .bot div i,
+.list .bot div span {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  color: #303030;
+  margin-right: 0.1rem;
+  vertical-align: middle;
+}
+.list .bot div span {
+  font-size: 0.28rem;
+}
+.list .bot div i {
+  font-size: 0.36rem;
+  color: #666;
+}
+.list .bot div strong {
+  font-size: 0.36rem;
+}
+.list .bot div .icon-chuangyikongjianICON_fuzhi- {
+  color: #ff712b;
+}
+.list .bot .right {
+  text-align: right;
+}
+
+.cancelAddress {
+  width: 5.8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.3rem;
+  background: #ff0000;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  margin: 0.95rem 0.3rem;
+  border-radius: 0.1rem;
+  -moz-border-radius: 0.1rem;
+  -webkit-border-radius: 0.1rem;
+}
+
+#addAddress {
+  width: 100%;
+  height: 1rem;
+  background: #ff712b;
+  position: fixed;
+  bottom: 0;
+  font-size: 10px;
+  text-align: center;
+}
+#addAddress span {
+  font-size: 0.32rem;
+  color: #fff;
+  line-height: 1rem;
+}
+
+.success {
+  width: 2.1rem;
+  height: 0.66rem;
+  font-size: 12px;
+  background: rgba(1, 1, 1, 0.5);
+  text-align: center;
+  border-radius: 0.1rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -1.05rem;
+  margin-top: -0.33rem;
+  display: none;
+}
+.success span {
+  font-size: 0.26rem;
+  color: #fff;
+  line-height: 0.66rem;
+}
+
+.kong {
+  width: 100%;
+  font-size: 12px;
+  overflow: hidden;
+}
+.kong p {
+  text-align: center;
+}
+.kong p i {
+  font-size: 1.9rem;
+  color: #cacaca;
+}
+.kong p span {
+  font-size: 0.28rem;
+  color: #cacaca;
+}

@@ -1,0 +1,110 @@
+@import url("public.css");
+html {
+  font-size: 13.333vw; }
+
+.subsidiary {
+   width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: relative; }
+  .subsidiary  .commin-head {
+    width: 100%;
+    height: 3rem;
+    background: none;
+    position: relative; }
+    .subsidiary  .commin-head img {
+      width: 100%;
+      height: 100%;
+      background: none; }
+    .subsidiary  .commin-head .img-people {
+      color: #ff712b;
+      position: absolute;
+      top: 1.3rem;
+      left: 3.2rem;
+      z-index: 999; }
+      .subsidiary  .commin-head .img-people span {
+        font-size: 0.4rem; }
+        .subsidiary  .commin-head .img-people span i {
+          font-size: 0.24rem; }
+      .subsidiary  .commin-head .img-people .yuan {
+        display: inline-block;
+        margin-left: 0.1rem;
+        font-size: 0.24rem;
+        position: absolute;
+        top: 0.5rem; }
+  .subsidiary .img-peo {
+    width: 2.43rem;
+    height: 2.43rem;
+    background: none;
+    position: absolute;
+    top: 0.8rem;
+    left: 2.50rem; }
+      .sub-nav{
+      width: 100%;
+      height: 0.95rem;
+      background: #ffffff;
+      border-bottom: 0.01rem solid #bfbfbf;
+      margin-top: -5px;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal; }
+       .sub-nav li{
+       	font-size: 0.30rem;
+       	line-height: 0.95rem;
+       	-webkit-box-flex: 1;
+       	text-align: center;
+       	padding-top: 0.1rem;
+        margin-left: 0.2rem;
+       	margin-right: 0.2rem;
+       }
+       .sub-nav .sub-one{
+       	color: #ff712b;
+       
+       	border-bottom: 0.03rem solid #ff712b;
+       }
+       .sub-contentre{
+       	padding-left: 0.3rem;
+       	box-sizing: border-box;
+       	margin-top: 0.12rem;
+       	width: 100%;
+       	height: auto;
+       	background: #FFFFFF;
+       }
+   .member {
+    width: 100%;
+    height: 1.3rem;
+    background: #ffffff;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    border-bottom: 0.01rem solid #d9d6d6; }
+       .member dl {
+      -webkit-box-flex: 4;
+      width: auto;
+      height: 100%;
+      background: #ffffff;
+  
+      }
+    .member dl dt {
+    	margin-top: 0.25rem;
+            font-size: 0.28rem;
+            color: #333333;}
+    .member dl dd {
+      font-size: 0.24rem;
+            color: #666666; 
+            margin-top: 0.2rem; }
+         
+.member ul {
+      margin-right: 0.3rem; }
+    .member ul li {
+        text-align: right; }
+       .member ul li:nth-child(1) {
+          font-size: 0.28rem;
+          color: #303030;
+          padding-top: 0.25rem; }
+       .member ul li:nth-child(2) {
+          font-size: 0.24rem;
+          color: #666666; 
+           margin-top: 0.2rem;
+          }
+/*# sourceMappingURL=subsidiary.css.map */

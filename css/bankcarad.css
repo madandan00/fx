@@ -1,0 +1,152 @@
+@import url("public.css");
+html {
+  font-size: 13.333vw; }
+
+.bankcard {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+  .bankcard input::-webkit-input-placeholder {
+    font-size: 0.24rem;
+    color: #606060; }
+  .bankcard .band-head .bankid {
+    width: 100%;
+    height: auto;
+    background: none; }
+    .bankcard .band-head .bankid p {
+      width: 100%;
+      height: 0.65rem;
+      background: #f0f0f0;
+      font-size: 0.24rem;
+      color: #606060;
+      line-height: 0.65rem;
+      padding-left: 0.3rem;
+      box-sizing: border-box; }
+    .bankcard .band-head .bankid ul {
+      padding-left: 0.3rem;
+      box-sizing: border-box;
+      width: 100%;
+      height: 2rem;
+      background: #ffffff; }
+      .bankcard .band-head .bankid ul li {
+        width: 100%;
+        height: 1rem;
+        background: #ffffff;
+        line-height: 1rem;
+        display: -webkit-box;
+        -webkit-box-orient: horizontal; }
+        .bankcard .band-head .bankid ul li span {
+          display: block;
+          font-size: 0.28rem;
+          color: #606060; }
+          .bankcard .band-head .bankid ul li span img {
+            width: 0.3rem;
+            height: 0.3rem;
+            background: none; }
+        .bankcard .band-head .bankid ul li input {
+          -webkit-box-flex: 1;
+          width: 100%;
+          height: 0.5rem;
+          margin-left: 0.5rem;
+          margin-top: -0.2rem;
+          border: none; }
+        .bankcard .band-head .bankid ul li h3 {
+          font-weight: normal;
+          font-size: 0.28rem;
+          color: #303030; }
+        .bankcard .band-head .bankid ul li .banktype {
+          font-size: 0.24rem;
+          color: #ff712b;
+          display: block;
+          margin-left: 0.8rem;
+          margin-top: 0.1rem; }
+          .bankcard .band-head .bankid ul li .banktype i {
+            font-size: 0.24rem;
+            color: #ff712b;
+            margin-left: 0.2rem; }
+        .bankcard .band-head .bankid ul li:nth-child(1) {
+          border-bottom: 0.01rem solid #BFBFBF; }
+  .bankcard .band-head .moneyzi {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    margin-top: 0.1rem;
+    padding-left: 0.3rem;
+    box-sizing: border-box; }
+    .bankcard .band-head .moneyzi .form-group {
+      width: 100%;
+      height: 1rem;
+      background: #ffffff;
+      line-height: 1rem;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal;
+      overflow: hidden;
+      border-bottom: 0.01rem solid #BFBFBF; }
+      .bankcard .band-head .moneyzi .form-group span {
+        font-size: 0.28rem;
+        color: #606060;
+        line-height: 1rem;
+        display: block; }
+      .bankcard .band-head .moneyzi .form-group label {
+        display: block;
+        font-size: 0.28rem;
+        color: #303030; }
+      .bankcard .band-head .moneyzi .form-group input {
+        width: 3rem;
+        height: 100%;
+        margin-left: 1.05rem;
+        border: none;
+        outline: none;
+        margin-top: -0.2rem; }
+      .bankcard .band-head .moneyzi .form-group .shenfen {
+        margin-left: 0.5rem; }
+      .bankcard .band-head .moneyzi .form-group .templo {
+        margin-left: 0.8rem; }
+      .bankcard .band-head .moneyzi .form-group #pho {
+        font-size: 0.28rem;
+        color: #606060;
+        line-height: 1rem;
+        display: block; }
+        .bankcard .band-head .moneyzi .form-group #pho img {
+          width: 0.3rem;
+          height: 0.3rem;
+          background: none; }
+  .bankcard .band-head .guanzhu {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    padding-left: 0.3rem;
+    box-sizing: border-box;
+    margin-top: 0.1rem; }
+    .bankcard .band-head .guanzhu .inBorder {
+      width: 0.3rem;
+      height: 0.3rem;
+      border: 0.01rem solid #666666;
+      border-radius: 50%;
+      margin-right: 0.1rem;
+      vertical-align: middle;
+      position: relative; }
+    .bankcard .band-head .guanzhu img {
+      width: 0.3rem;
+      height: 0.3rem;
+      position: absolute;
+      top: 0; }
+    .bankcard .band-head .guanzhu span {
+      font-size: 0.28rem;
+      display: block; }
+      .bankcard .band-head .guanzhu span i {
+        color: #FF712B; }
+  .bankcard .nextspn {
+    margin-top: 3rem;
+    width: 100%;
+    height: 1rem;
+    background: #ff712b;
+    text-align: center; }
+    .bankcard .nextspn span {
+      font-size: 0.30rem;
+      color: #FFFFFF;
+      display: block;
+      line-height: 1rem; }
+
+/*# sourceMappingURL=bankcarad.css.map */

@@ -1,0 +1,109 @@
+.wrapper {
+    overflow: hidden;
+}
+.mark {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    z-index: 1000;
+    display: none;
+}
+.box {
+    padding: 0 0.32rem;
+    height: 1rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #fff;
+    div {
+        width: 100%;
+        height: 1rem;
+        background: #fff;
+        position: relative;
+        i,
+        span {
+            height: 1rem;
+            line-height: 1rem;
+            color: #333;
+            margin-right: 0.1rem;
+            vertical-align: middle;
+        }
+        span {
+            font-size: 0.28rem;
+            float: left;
+        }
+        i {
+            font-size: 0.34rem;
+            color: #666;
+            float: right;
+        }
+        .icon-chuangyikongjianICON_fuzhi- {
+            color: #ff712b;
+        }
+        label {
+            display: inline-block;
+            font-size: 0.28rem;
+            color: #303030;
+            height: 1rem;
+            line-height: 1rem;
+            width: 1.8rem;
+            vertical-align: middle;
+            float: left;
+        }
+        .in {
+            font-size: 0.28rem;
+            border: none;
+            height: 1rem;
+            line-height: 1rem;
+            margin-left: 0.2rem;
+            width: 4rem;
+            vertical-align: middle;
+            float: left;
+        }
+        .in::-webkit-input-placeholder {
+            color: #666;
+        }
+        .in::-moz-placeholder {
+            color: #666;
+        }
+        .in::-moz-placeholder {
+            color: #666;
+        }
+        .in:-ms-input-placeholder {
+            color: #666;
+        }
+        .in::-webkit-input-placeholder {
+            color: #666;
+        }
+        .in::-moz-placeholder {
+            color: #666;
+        }
+        .in::-moz-placeholder {
+            color: #666;
+        }
+        .in:-ms-input-placeholder {
+            color: #666;
+        }
+    }
+}
+#save {
+    width: 100%;
+    height: 1rem;
+    background: #ff712b;
+//  position: fixed;
+//  bottom: 0;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 0.5rem;
+    span,button{
+        width: 100%;
+        height: 1rem;
+        background: #ff712b;
+        font-size: 0.32rem;
+        color: #fff;
+        line-height: 1rem;
+        border: none;
+        outline: none;
+    }
+}

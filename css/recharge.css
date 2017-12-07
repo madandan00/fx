@@ -1,0 +1,49 @@
+@import url("public.css");
+html {
+  font-size: 13.333vw; }
+
+.recharge {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+  .recharge .rechar-success {
+    width: 100%;
+    height: 4.6rem;
+    background: #ffffff; }
+    .recharge .rechar-success img {
+      width: 2.25rem;
+      height: 2.75rem;
+      background: none;
+      margin-left: 2.54rem;
+      margin-top: 0.1rem; }
+    .recharge .rechar-success p {
+      font-size: 0.30rem;
+      color: #303030;
+      margin-left: 2.4rem; }
+      .recharge .rechar-success p i {
+        font-size: 0.24rem; }
+    .recharge .rechar-success .btn-rem {
+      margin-top: 0.4rem; }
+      .recharge .rechar-success .btn-rem button {
+        width: 2rem;
+        height: 0.7rem;
+        border: none;
+        outline: none;
+        border-radius: 5px; }
+        .recharge .rechar-success .btn-rem button:nth-child(1) {
+          float: left;
+          margin-left: 0.6rem;
+          background: #ff712b;
+          font-size: 0.28rem;
+          color: #FFFFFF; }
+        .recharge .rechar-success .btn-rem button:nth-child(2) {
+          float: right;
+          margin-right: 0.6rem;
+          background: #ffffff;
+          border: 1px solid #ff712b;
+          color: #ff712b;
+          font-size: 0.28rem; }
+
+/*# sourceMappingURL=recharge.css.map */

@@ -1,0 +1,185 @@
+@import url("public.css");
+html {
+  font-size: 13.333vw; }
+
+.cashbank {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: relative; }
+  .cashbank .cash-back {
+    width: 100%;
+    height: 3rem;
+    background: #FFFFFF; }
+    .cashbank .cash-back .back-ug {
+      width: 100%;
+      height: 100%;
+      background: none; }
+    .cashbank .cash-back .cash-money {
+      width: 2rem;
+      height: 0.9rem;
+      background: none;
+      color: #ff712b;
+      position: absolute;
+      top: 1.2rem;
+      left: 3rem;
+      z-index: 99; }
+      .cashbank .cash-back .cash-money span {
+        font-size: 0.41rem;
+        position: relative; }
+        .cashbank .cash-back .cash-money span i {
+          font-size: 0.32rem; }
+        .cashbank .cash-back .cash-money span .yuan {
+          margin-top: -1rem;
+          position: absolute;
+          top: 0.8rem;
+          margin-left: 0.1rem; }
+      .cashbank .cash-back .cash-money .yuan {
+        font-size: 0.32rem;
+        display: inline-block; }
+    .cashbank .cash-back .peo-img {
+      width: 2.45rem;
+      height: 2.45rem;
+      background: none;
+      position: absolute;
+      left: 2.5rem;
+      top: 0.8rem; }
+  .cashbank .cash-sect {
+    margin-top: 0.3rem;
+    width: 100%;
+    height: auto;
+    background: none; }
+    .cashbank .cash-sect .title {
+      width: 100%;
+      height: 1rem;
+      background: #FFFFFF;
+      line-height: 1rem;
+      padding-left: 0.3rem;
+      box-sizing: border-box;
+      position: relative; }
+      .cashbank .cash-sect .title span {
+        font-size: 0.30rem;
+        color: #303030;
+        display: block;
+        float: left; }
+      .cashbank .cash-sect .title i {
+        font-size: 0.26rem;
+        color: #303030;
+        float: right;
+        margin-right: 0.3rem; }
+    .cashbank .cash-sect ul {
+      width: 100%;
+      height: auto;
+      background: #FFFFFF;
+      margin-top: 0.1rem;
+      padding-left: 0.3rem;
+      box-sizing: border-box;
+      margin-bottom: 0.1rem; }
+      .cashbank .cash-sect ul li {
+        width: 100%;
+        height: 1rem;
+        background: #FFFFFF;
+        border-bottom: 1px solid #d0d0d0;
+        line-height: 1rem;
+        font-size: 0.30rem;
+        color: #303030; }
+        .cashbank .cash-sect ul li i {
+          float: right;
+          margin-right: 0.3rem;
+          font-size: 0.26rem; }
+        .cashbank .cash-sect ul li:nth-child(3) {
+          border: none; }
+    .cashbank .cash-sect .title1 {
+      width: 100%;
+      height: 1rem;
+      background: #FFFFFF;
+      line-height: 1rem;
+      padding-left: 0.3rem;
+      box-sizing: border-box;
+      position: relative; }
+      .cashbank .cash-sect .title1 span {
+        font-size: 0.30rem;
+        color: #303030;
+        display: block;
+        float: left; }
+      .cashbank .cash-sect .title1 i {
+        font-size: 0.26rem;
+        color: #303030;
+        float: right;
+        margin-right: 0.55rem; }
+      .cashbank .cash-sect .title1 .fuhao {
+        position: absolute;
+        right: 0.3rem;
+        top: 0.4rem;
+        display: inline-block;
+        width: 0.2rem;
+        height: 0.2rem;
+        /*background: red;*/
+        border: 1px solid;
+        transform: rotateZ(45deg);
+        border-bottom: none;
+        border-left: none;
+        vertical-align: middle; }
+    .cashbank .cash-sect .cash-na {
+      margin-top: 0.1rem;
+      width: 100%;
+      height: 1rem;
+      background: #FFFFFF;
+      line-height: 1rem;
+      padding-left: 0.3rem;
+      border-bottom: 1px solid #d0d0d0;
+      box-sizing: border-box;
+      position: relative; }
+      .cashbank .cash-sect .cash-na span {
+        font-size: 0.30rem;
+        color: #303030;
+        display: block;
+        float: left; }
+      .cashbank .cash-sect .cash-na i {
+        font-size: 0.26rem;
+        color: #303030;
+        float: right;
+        margin-right: 0.55rem; }
+      .cashbank .cash-sect .cash-na .fuhaot {
+        position: absolute;
+        right: 0.3rem;
+        top: 0.4rem;
+        display: inline-block;
+        width: 0.2rem;
+        height: 0.2rem;
+        /*background: red;*/
+        border: 1px solid;
+        transform: rotateZ(45deg);
+        border-top: none;
+        border-left: none;
+        vertical-align: middle; }
+    .cashbank .cash-sect .name-xuz {
+      padding-left: 0.3rem;
+      padding-right: 0.3rem;
+      box-sizing: border-box;
+      width: 100%;
+      height: auto;
+      background: #FFFFFF; }
+      .cashbank .cash-sect .name-xuz p:nth-child(1) {
+        font-size: 0.26rem;
+        color: #7c7c7c;
+        line-height: 0.4rem;
+        padding-top: 0.24rem; }
+      .cashbank .cash-sect .name-xuz p:nth-child(2) {
+        margin-top: 0.3rem;
+        font-size: 0.3rem;
+        color: #333333;
+        padding-bottom: 0.3rem; }
+    .cashbank .cash-sect .sq-chas {
+      display: inline-block;
+      width: 100%;
+      height: 1rem;
+      background: #fc932c;
+      text-align: center;
+      line-height: 1rem;
+      color: #FFFFFF;
+      font-size: 0.3rem; }
+
+/*# sourceMappingURL=cashbank.css.map */

@@ -1,0 +1,88 @@
+.content {
+  overflow: hidden;
+}
+
+.tip {
+  height: 1rem;
+  background: #fff;
+  padding: 0 0.32rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+.tip i, .tip span {
+  color: #ff712b;
+  line-height: 1rem;
+  float: left;
+}
+.tip i {
+  font-size: 0.6rem;
+}
+.tip span {
+  font-size: 0.32rem;
+  margin-left: 0.3rem;
+}
+.tip div {
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  padding: 0 0.32rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  background: #fff;
+}
+.description p {
+  font-size: 0.3rem;
+  color: #333;
+  line-height: 1.35rem;
+}
+
+.box {
+  height: 1rem;
+  background: #fff;
+  font-size: 12px;
+  padding: 0 0.32rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+.box span, .box i {
+  color: #303030;
+  line-height: 1rem;
+}
+.box span {
+  font-size: 0.28rem;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 1.5rem;
+}
+.box i {
+  font-size: 0.24rem;
+}
+
+.kdxx {
+  height: 0.8rem;
+  background: #eee;
+  font-size: 12px;
+  padding: 0 0.32rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+.kdxx span {
+  font-size: 0.24rem;
+  line-height: 0.8rem;
+  color: #303030;
+}

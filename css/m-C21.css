@@ -1,0 +1,45 @@
+.content {
+  overflow: hidden;
+}
+
+.tip {
+  background: #fff;
+  font-size: 12px;
+  height: 3.44rem;
+  overflow: hidden;
+}
+.tip p {
+  text-align: center;
+}
+.tip i,
+.tip span {
+  color: #ff712b;
+}
+.tip i {
+  font-size: 1.6rem;
+}
+.tip span {
+  font-size: 0.36rem;
+}
+
+.description {
+  padding: 0.15rem 0.32rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  font-size: 12px;
+  background: #fff;
+}
+.description p {
+  padding: 0 0.42rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  font-size: 0.3rem;
+  line-height: 0.53rem;
+  color: #999;
+}

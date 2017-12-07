@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>我的订单/待评价</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<script type="text/javascript" src="js/public.js"></script>
+		<link rel="stylesheet" href="css/border1.css" />
+		<link rel="stylesheet" href="css/m-order.css" />
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="nav border1">
+				<ul class="clearfix ">
+					<a href="m-order.html"><li>全部</li></a>
+					<a href="m-order1.html"><li>待付款</li></a>
+					<a href="m-order2.html"><li>待发货</li></a>
+					<a href="m-order3.html"><li>待收货</li></a>
+					<a href="m-order4.html"><li class="active">待评价</li></a>
+				</ul>
+			</div>
+			
+			<div class="order-info">
+				<div class="order-Num border1">
+					<span>订单编号：11220055</span><i>交易成功</i>
+				</div>
+				<a href="">
+					<div class="good-info">
+						<div class="good clearfix">
+							<div class="left">
+								<img src="img/goods_03.jpg" />
+							</div>
+							<div class="right">
+								<p><span class="goods-name">原耕农家自种茄子</span><i class="number">x1</i></p>
+								<p class="goods-feature">新鲜绿色 当天采摘 无农药化肥 400g</p>
+								<p class="goods-price"><span style="font-size: 0.22rem;">￥</span><span>20.50</span></p>
+							</div>
+						</div>
+						<div class="order-money border1">
+							<span style="font-size: 0.24rem;color: #666;margin-right: 0.24rem;">共1件</span><span style="font-size: 0.24rem;color: #303030;">应付总额：￥</span ><span style="font-size:0.30rem;color:#303030;font-weight: bold;">20.50</span>
+						</div>
+					</div>
+				</a>
+				<div class="operation">
+					<span class="delete" style="margin-right: 0.4rem;">删除订单</span><span class="buy" style="margin-right: 0.4rem;">再次购买</span><a href="m-estimate-list.html"><span class="estimate">评价</span></a>
+				</div>
+			</div>
+			<div class="order-info">
+				<div class="order-Num border1">
+					<span>订单编号：11220055</span><i>已发货</i>
+				</div>
+				<a href="">
+					<div class="good-info">
+						<div class="big-box clearfix">
+							<img src="img/goods_03.jpg" />
+							<img src="img/goods_03.jpg" />
+							<img src="img/goods_03.jpg" />
+							<img src="img/goods_03.jpg" />
+						</div>
+						<div class="order-money border1">
+							<span style="font-size: 0.24rem;color: #666;margin-right: 0.24rem;">共1件</span><span style="font-size: 0.24rem;color: #303030;">应付总额：￥</span ><span style="font-size:0.30rem;color:#303030;font-weight: bold;">20.50</span>
+						</div>
+					</div>
+				</a>
+				<div class="operation">
+					<span class="delete" style="margin-right: 0.4rem;">删除订单</span><span class="buy" style="margin-right: 0.4rem;">再次购买</span><a href="m-estimate.html"><span class="estimate">评价</span></a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

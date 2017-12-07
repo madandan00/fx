@@ -1,0 +1,109 @@
+@import url("public.css");
+html {
+  font-size: 13.333vw; }
+
+.priviege {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+  .priviege .privitop {
+    width: 100%;
+    height: 1.6rem;
+    background: #ff712b;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    box-sizing: border-box;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal; }
+    .priviege .privitop dl {
+      -webkit-box-flex: 1;
+      text-align: center; }
+      .priviege .privitop dl dt {
+        margin-top: -0.3rem; }
+        .priviege .privitop dl dt img {
+          width: 0.58rem;
+          height: 0.57rem;
+          background: none; }
+      .priviege .privitop dl dd {
+        font-size: 0.28rem;
+        color: #FFFFFF; }
+    .priviege .privitop .active {
+      position: relative; }
+      .priviege .privitop .active span {
+        position: absolute;
+        bottom: 0rem;
+        left: 0.75rem;
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 0.1rem solid transparent;
+        border-right: 0.1rem solid transparent;
+        border-bottom: 0.2rem solid #fff; }
+  .priviege .contenter {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 0.48rem 0.3rem 0.3rem 0.3rem;
+    box-sizing: border-box; }
+    .priviege .contenter .title {
+      width: 100%;
+      height: auto;
+      background: #f7f7f7;
+      padding-bottom: 0.3rem;
+      position: relative; }
+      .priviege .contenter .title h4 {
+        font-size: 0.33rem;
+        color: #333333;
+        font-weight: normal;
+        margin-left: 0.43rem;
+        padding-top: 0.4rem; }
+      .priviege .contenter .title p {
+        width: 3.23rem;
+        height: auto;
+        background: none;
+        font-size: 0.26rem;
+        color: #333333;
+        margin-left: 0.43rem;
+        margin-top: 0.17rem; }
+      .priviege .contenter .title img {
+        width: 1.27rem;
+        height: 1.7rem;
+        background: none;
+        position: absolute;
+        right: 0.7rem;
+        bottom: 0; }
+      .priviege .contenter .title .aaa {
+        width: 2.04rem;
+        height: 1.58rem;
+        background: none;
+        position: absolute;
+        right: 0rem;
+        bottom: 0; }
+      .priviege .contenter .title .huiyuande {
+        width: 4.18rem;
+        height: auto;
+        background: none; }
+    .priviege .contenter .nav-tiel p {
+      margin-top: 0.28rem;
+      font-size: 0.33rem;
+      color: #333333; }
+      .priviege .contenter .nav-tiel p img {
+        width: 0.44rem;
+        height: 0.44rem;
+        background: none;
+        margin-right: 0.15rem; }
+    .priviege .contenter .nav-tiel dl {
+      margin-top: 0.20rem;
+      margin-left: 0.1rem; }
+      .priviege .contenter .nav-tiel dl dt {
+        font-size: 0.28rem;
+        color: #333333; }
+      .priviege .contenter .nav-tiel dl dd {
+        font-size: 0.28rem;
+        color: #666666;
+        margin-top: 0.22rem;
+        margin-left: 0.33rem; }
+
+/*# sourceMappingURL=privilege.css.map */

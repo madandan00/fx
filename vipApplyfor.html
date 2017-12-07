@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>加入vip</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" href="css/applyfor.css" />
+</head>
+<body>
+	<!--VIP申请页面-->
+	<div class="contenter">
+        <!--中间内容-->
+        <div class="apply-secti">
+        	<div class="recomVip">
+        		<p><span>青青小仙</span>推荐你成为<span>青青优农</span>VIP。</p>
+        	</div>
+        	<div class="attention">
+        		<dl>
+        			<dt>关注微信公众号</dt>
+        			<dd>先关注微信公众号才可以加入VIP</dd>
+        		</dl>
+        		<span id="btn" onclick="change()">关注</span>
+        	</div>
+        	<div class="reason">
+        		<h3>变身VIP的理由</h3>
+        	</div>
+            <div class="reason-app">
+            	<div class="img-apply">
+            		<dl>
+            			<dt><img src="images/img-a_03.jpg"/></dt>
+            			<dd>拥有自己的微店</dd>
+            			<dd>和推广二维码</dd>
+            		</dl>
+            		<dl>
+            			<dt><img src="images/fithgkl_05.jpg"/></dt>
+            			<dd>微店卖出商品</dd>
+            			<dd>您可以获得佣金</dd>
+            		</dl>
+            	</div>
+            	<p>VIP的商品销售统一由厂家直接收款、直接发货，并提供产品的售后服务，分销佣金由厂家统一设置。</p>
+            </div>
+            <div class="dj-apply">
+            	<p>VIP等级说明与佣金分配制度</p>
+            	<span class="xiangqing">了解详情</span>
+            </div>
+        </div>
+        <!--尾部-->
+        <div class="foot-apply" style="background: #e3e3e3;color: #999;">
+        	加入VIP
+        </div>
+	</div>
+	<!--遮罩-->
+	<div class="mask" style="">
+					<div class="vip-success">
+				      <img src="images/back_03.jpg" class="back-off"/>
+				      <img src="images/vip_03.png" class="vip-img"/>
+				    <div class="vip-shop">
+				    	  <p>恭喜您成为青青VIP</p>
+				    	  <span>您已有自己的小店</span>
+				    	  <button>去我的小店</button>
+				    </div>
+	              </div>
+		</div>
+</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script>
+//关注和取消关注
+	function change() {
+    var mark = document.getElementById('btn').innerText;
+    if (mark == '关注') {
+        document.getElementById('btn').innerText = "已关注";
+        document.getElementById('btn').style.border="1px solid #bfbfbf";
+        document.getElementById('btn').style.color="#B1B1B1";
+    }
+    else {
+        document.getElementById('btn').innerText = "关注   ";
+        document.getElementById('btn').style.border="1px solid #ff712b";
+        document.getElementById('btn').style.color="#ff712b";
+       
+    }
+}    
+    var a=$('#btn').text();
+	$('.foot-apply').tap(function(){
+		var b=$('#btn').html();
+		if(b=="关注"){
+			alert("加入失败");
+		}
+		else{
+			$(".mask").show();
+		}
+	})
+	$("#btn").tap(function(){
+		if(a!="已关注"){
+			$(".foot-apply").css({"background":"#ff712b"})
+		}
+	})
+	$(".back-off").tap(function(){
+		$(".mask").hide();
+		
+	})
+	$(".xiangqing").tap(function(){
+		window.location.href="applyxq.html";
+	})
+</script>

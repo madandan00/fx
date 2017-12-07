@@ -1,0 +1,265 @@
+@import url(public.css);
+html {
+  font-size: 13.333vw;
+}
+html,
+body,
+.cash_dec {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.cash_dec {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+header {
+  width: 7.5rem;
+  height: 0.86rem;
+  background: none;
+}
+header .wait {
+  padding: 0 0.33rem;
+  box-sizing: border-box;
+}
+header .wait ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+header .wait ul li {
+  width: 1.2rem;
+  height: 0.83rem;
+  background: none;
+  margin-right: 0.5rem ;
+  text-align: center;
+  line-height: 0.83rem;
+}
+header .wait ul li a {
+  color: #303030;
+  font-size: 0.3rem;
+}
+header .wait .cash_act {
+  border-bottom: 2px solid #ff712b;
+}
+header .wait .cash_act a {
+  color: #FF712B;
+}
+section {
+  -webkit-box-flex: 1;
+  background: #f0f0f0;
+}
+.main > div {
+  height: 100%;
+}
+.all {
+  margin-top: 0.22rem;
+  width: 7.5rem;
+  height: 100%;
+  background: #ffffff;
+  padding-left: 0.33rem;
+  padding-right: 0.33rem;
+  box-sizing: border-box;
+}
+.all .review {
+  width: 6.84rem;
+  height: 1.51rem;
+  background: #ffffff;
+  padding-top: 0.3rem;
+  border-bottom: 1px solid #d9d6d6;
+}
+.all .review .rev {
+  bold: none;
+  font-size: 0.28rem;
+  line-height: 0.43rem;
+  color: #303030;
+}
+.all .review .rev span {
+  float: right;
+}
+.all .review .rev i {
+  float: right;
+  color: #aaaaaa;
+  margin-right: 10px;
+}
+.all .review .rev a {
+  float: right;
+  color: #aaaaaa;
+}
+.all .review .rev b {
+  float: right;
+  color: #aaaaaa;
+  font-weight: 100;
+}
+.all .payment {
+  width: 6.84rem;
+  height: 1.51rem;
+  background: #ffffff;
+  padding-top: 0.3rem;
+  border-bottom: 1px solid #d9d6d6;
+}
+.all .payment .pay {
+  bold: none;
+  font-size: 0.28rem;
+  line-height: 0.43rem;
+  color: #303030;
+}
+.all .payment .pay span {
+  float: right;
+}
+.all .payment .pay i {
+  float: right;
+  color: #aaaaaa;
+  margin-right: 10px;
+}
+.all .payment .pay a {
+  float: right;
+  color: #aaaaaa;
+}
+.all .payment .pay b {
+  float: right;
+  color: #aaaaaa;
+  font-weight: 100;
+}
+.all .succ {
+  width: 6.84rem;
+  height: 2.22rem;
+  background: #ffffff;
+  padding-top: 0.3rem;
+}
+.all .succ .pay {
+  bold: none;
+  font-size: 0.28rem;
+  line-height: 0.43rem;
+  color: #303030;
+}
+.all .succ .pay span {
+  float: right;
+}
+.all .succ .pay i {
+  float: right;
+  color: #aaaaaa;
+  margin-right: 10px;
+}
+.all .succ .pay a {
+  float: right;
+  color: #aaaaaa;
+}
+.all .succ .pay b {
+  float: right;
+  color: #aaaaaa;
+  font-weight: 100;
+}
+.audit {
+  margin-top: 0.22rem;
+  width: 7.5rem;
+  height: 100%;
+  background: #ffffff;
+  padding-left: 0.33rem;
+  padding-right: 0.33rem;
+}
+.audit .review {
+  width: 6.84rem;
+  height: 1.51rem;
+  background: #ffffff;
+  padding-top: 0.3rem;
+  border-bottom: 1px solid #d9d6d6;
+}
+.audit .review .rev {
+  bold: none;
+  font-size: 0.28rem;
+  line-height: 0.43rem;
+  color: #303030;
+}
+.audit .review .rev span {
+  float: right;
+}
+.audit .review .rev i {
+  float: right;
+  color: #aaaaaa;
+  margin-right: 10px;
+}
+.audit .review .rev a {
+  float: right;
+  color: #aaaaaa;
+}
+.audit .review .rev b {
+  float: right;
+  color: #aaaaaa;
+  font-weight: 100;
+}
+.payments {
+  margin-top: 0.22rem;
+  width: 7.5rem;
+  height: 100%;
+  background: #ffffff;
+  padding-left: 0.33rem;
+  padding-right: 0.33rem;
+}
+.payments .payment {
+  width: 6.84rem;
+  height: 1.51rem;
+  background: #ffffff;
+  padding-top: 0.3rem;
+  border-bottom: 1px solid #d9d6d6;
+}
+.payments .payment .pay {
+  bold: none;
+  font-size: 0.28rem;
+  line-height: 0.43rem;
+  color: #303030;
+}
+.payments .payment .pay span {
+  float: right;
+}
+.payments .payment .pay i {
+  float: right;
+  color: #aaaaaa;
+  margin-right: 10px;
+}
+.payments .payment .pay a {
+  float: right;
+  color: #aaaaaa;
+}
+.payments .payment .pay b {
+  float: right;
+  color: #aaaaaa;
+  font-weight: 100;
+}
+.succe {
+  margin-top: 0.22rem;
+  width: 7.5rem;
+  height: 100%;
+  background: #ffffff;
+  padding-left: 0.33rem;
+  padding-right: 0.33rem;
+}
+.succe .succ {
+  width: 6.84rem;
+  height: 2.22rem;
+  background: #ffffff;
+  padding-top: 0.3rem;
+  border-bottom: 1px solid #d9d6d6;
+}
+.succe .succ .suc {
+  bold: none;
+  font-size: 0.28rem;
+  line-height: 0.43rem;
+  color: #303030;
+}
+.succe .succ .suc span {
+  float: right;
+}
+.succe .succ .suc i {
+  float: right;
+  color: #aaaaaa;
+  margin-right: 10px;
+}
+.succe .succ .suc a {
+  float: right;
+  color: #aaaaaa;
+}
+.succe .succ .suc b {
+  float: right;
+  color: #aaaaaa;
+  font-weight: 100;
+}

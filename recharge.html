@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/recharge.css" />
+	</head>
+	<body>
+		<!--充值成功页面-->
+		<div class="recharge">
+			<div class="rechar-success">
+				<img src="images/rach-suc_03.jpg" alt="" />
+				<p>账户余额：￥500<i>.00</i></p>
+				<div class="btn-rem">
+					<button class="mybvank">我的钱包</button>
+					<button class="jixuchonb">继续充值</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script>
+	$('.jixuchonb').tap(function(){
+		window.location.href="top-up.html";
+	})
+	$(".mybvank").tap(function(){
+		window.location.href="bankwithdrawal.html";
+	})
+</script>

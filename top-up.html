@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/top-head.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_404971_no24aaq7sxzgp66r.css" />
+	</head>
+	<body>
+		<!--充值页面-->
+		<div class="top-head">
+			<p class="prompting">充值后可使用余额进行交易支付，充值一定金额可升等级</p>
+			<div class="balance">
+				<p>当前余额</p>
+				<span class="balan"><i>￥</i>5<i>.00</i></span>
+				<p class="balan-rig"><a href="#">明细</a><span></span></p>
+			</div>
+			<div class="amount">
+				<p>充值金额</p>
+				<div class="amount-smal">
+			     <p>￥<input type="text" value=""/></p>
+			     <span class="ab">充值金额不能低于￥50.00</span>
+				</div>
+				<div class="Howmuchimpact">
+					<dl>
+						<dt>￥200</dt>
+						<dd>充￥200送￥5</dd>
+					</dl>
+					<dl>
+						<dt>￥800</dt>
+						<dd>充￥800送￥50</dd>
+					</dl>
+					<dl>
+						<dt>￥1000</dt>
+						<dd>充￥1000送￥100</dd>
+					</dl>
+					<dl>
+						<dt>￥2000</dt>
+						<dd>充￥2000送￥180</dd>
+					</dl>
+					<dl>
+						<dt>￥5000</dt>
+						<dd>充￥5000送￥300</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="amou-type">
+				 <ul>
+				 	<li class="a">
+				        <i class="iconfont icon-weixin" style="color: #09bb07;"></i>
+				               微信支付
+				       <label class="all" id="alls">
+				           <input type="radio" class="aall" name="abc" value="" readonly="true">
+								<i>✓</i>
+					    </label>
+				 	</li>
+				 	<li>
+				 		<i class="iconfont icon-zhifubao" style="color: #0aaaf0;"></i>
+				 		支付宝支付
+				 		  <label class="all" id="alls">
+				           <input type="radio" class="all" name="abc">
+								<i>✓</i>
+					    </label>
+				 	</li>
+				 	<li class="li-stree">
+				 		<img src="images/yinlain_07.png" alt="" />
+				 		银行卡支付
+				 		<label class="all" id="alls">
+				           <input type="radio" class="all" name="abc">
+								<i>✓</i>
+					    </label>
+				 	</li>
+				 </ul>
+			</div>
+			<span class="zhifu_l">立即支付</span>
+		</div>
+	</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script>
+	$(function(){
+		$(".aall").val("2");
+				$('.zhifu_l').on('click',function(){
+				var value = parseInt($('.amount-smal input').val());
+				var chkRadio = $('.all input:checked').val();
+				
+				if (value) {
+					if (chkRadio!='') {
+						window.location.href="recharge.html";
+					}else{
+						alert('请选择充值方式')
+						location.reload()
+					};
+				}else{
+					alert('请输入充值金额')
+					location.reload();
+				};
+			})
+
+		$(".Howmuchimpact dl").click(function(){
+			var _index=$(this).index();
+			var _test =$(this).find("dt").text().replace(/\D+/g,"");
+			/*var _val =$(".amount-smal span i").text();*/
+			$(".amount-smal p input").val(_test+".00");
+			 $('.ab').hide();
+		})
+		var _val = $(".amount-smal p input").val(); 
+		$(".amount-smal p input").blur(function() {
+        if ($(".amount-smal p input").val() == "")
+        { 
+              $('.ab').show();
+        }
+        else
+            $('.ab').hide();
+      });
+	})
+</script>

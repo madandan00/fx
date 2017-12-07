@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的优惠券</title>
+		<link rel="stylesheet" href="css/coupons.css" />
+	</head>
+	<body>
+		<div class="conupons">
+			<div class="conuptitle">
+				<ul>
+					<li class="active-a"><a href="#">我的优惠券</a></li>
+					<li><a href="#">已用优惠券</a></li>
+				</ul>
+			</div>
+			<p><img src="images/yiwen_03.jpg"/><a href="Couponcode.html">使用规则</a></p>
+			<div class="coupyhq">
+				<div class="weishiyong">
+					<div class="theryh">
+						<span>3</span>
+						<i>2017.08.15-2017.08.30</i>
+						<a href="#">去使用</a>
+					</div>
+					<div class="theryh">
+						<span>3</span>
+						<i>2017.08.15-2017.08.30</i>
+						<a href="#">去使用</a>
+					</div>
+				</div>
+				<div class="yishiyong">
+					<div class="theryh">
+						<span>3</span>
+						<i>2017.08.15-2017.08.30</i>
+						<a href="#">已使用</a>
+					</div>
+					<div class="theryh">
+						<span>3</span>
+						<i>2017.08.15-2017.08.30</i>
+						<a href="#">已使用</a>
+					</div>
+				</div>
+			</div>
+			<div class="nogengyh">
+				<p>没有更多的优惠券了~</p>
+			</div>
+			<div class="looksix">
+				<span class="aa"><a href="Invalid.html">查看失效的优惠券</a></span>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script>
+	$(function(){
+		$(".conuptitle li").tap(function(){
+			$(this).addClass("active-a").siblings().removeClass("active-a");
+			var _index=$(this).index();
+		   $(".coupyhq>div ").hide().eq(_index).show();
+		   if(_index=="1"){
+		   	$(".looksix").hide();
+		   }else{
+		   	$(".looksix").show();
+		   }
+		})
+	
+		/*$(".banktitle .czx").tap(function(){
+		   $("dl i").each(function(){
+		   	 alert($(this).index())
+		   })
+		})*/
+	})	
+	/*function GetRandomNum(Min,Max)
+		{   
+		var Range = Max - Min;   
+		var Rand = Math.random();   
+		return(Min + Math.round(Rand * Range));   
+		}   
+		var num = GetRandomNum(1,9999999); 
+
+		var times = (new Date()).valueOf();
+	    var a =times+num;
+	    alert(a);*/
+</script>

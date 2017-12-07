@@ -1,0 +1,453 @@
+.content {
+  overflow: hidden;
+}
+
+body {
+  background: #fbfbfb;
+}
+
+#banner {
+  width: 100%;
+  height: 4.8rem;
+}
+#banner img {
+  width: 100%;
+  height: 4.8rem;
+}
+#banner .swiper-pagination-bullet-active {
+  background: #ff712b;
+}
+
+#goods-mes {
+  margin: 0 .2rem;
+  background: #fff;
+  padding: 0 .3rem;
+  border-radius: .1rem;
+  box-shadow: .05rem .05rem .15rem #ccc;
+}
+#goods-mes .goodsname {
+  font-size: .36rem;
+  color: #303030;
+  line-height: 1rem;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#goods-mes .goodsms {
+  font-size: .28rem;
+  color: #909090;
+}
+#goods-mes .goodsprices {
+  line-height: .8rem;
+  border-bottom: 1px solid #bfbfbf;
+}
+#goods-mes .goodsprices .prices {
+  font-size: .34rem;
+  color: #ff712b;
+}
+#goods-mes .goodsprices .prices .pre {
+  font-size: .44rem;
+  font-weight: bolder;
+}
+#goods-mes .goodsprices .prices del {
+  font-size: .24rem;
+  color: #878787;
+}
+#goods-mes .goodsprices .ys {
+  font-size: .26rem;
+  color: #303030;
+  float: right;
+  margin-top: .2rem;
+}
+#goods-mes .delivery {
+  font-size: .26rem;
+  color: #303030;
+  line-height: .9rem;
+}
+#goods-mes .delivery i {
+  color: #ff712b;
+  margin-right: .1rem;
+  font-weight: bolder;
+  font-size: .32rem;
+}
+
+#discounts {
+  background: #fff;
+  height: 1.4rem;
+  margin: 0 .2rem;
+  padding: 0 .3rem;
+  font-size: .26rem;
+  border-radius: .1rem;
+  margin-top: .1rem;
+  box-shadow: .05rem .05rem .15rem #ccc;
+}
+#discounts p {
+  font-size: .26rem;
+  line-height: .8rem;
+}
+#discounts p i {
+  color: #FF712B;
+  font-size: .32rem;
+  font-weight: bolder;
+}
+#discounts span {
+  text-align: center;
+  font-size: .26rem;
+  color: #909090;
+}
+
+#appraise {
+  margin: 0 .2rem;
+  background: #fff;
+  margin-top: .1rem;
+  box-shadow: .05rem .05rem .15rem #ccc;
+  border-radius: .1rem;
+}
+#appraise .appraise-tit {
+  line-height: 1.15rem;
+  padding: 0 .32rem;
+  border-bottom: 1px solid #BFBFBF;
+}
+#appraise .appraise-tit .yhtit {
+  font-size: .32rem;
+  color: #303030;
+}
+#appraise .appraise-tit .yhtit .sum {
+  font-size: .26rem;
+}
+#appraise .appraise-tit .all {
+  font-size: .26rem;
+  float: right;
+  margin-top: .2rem;
+}
+#appraise .appraise-cont .ape .ape-head {
+  height: 1.1rem;
+  overflow: hidden;
+  margin-top: .24rem;
+  padding: 0 .32rem;
+}
+#appraise .appraise-cont .ape .ape-head .user-pto {
+  width: .8rem;
+  height: .8rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  text-align: center;
+  line-height: .8rem;
+  font-size: .32rem;
+  margin-right: .12rem;
+  float: left;
+}
+#appraise .appraise-cont .ape .ape-head .user-pto img {
+  width: .8rem;
+  height: .8rem;
+}
+#appraise .appraise-cont .ape .ape-head .user-name {
+  font-size: .28rem;
+  float: left;
+}
+#appraise .appraise-cont .ape .ape-head .user-name p {
+  font-size: .28rem;
+  color: #303030;
+  margin-bottom: .15rem;
+}
+#appraise .appraise-cont .ape .ape-head .user-name span {
+  font-size: .26rem;
+  color: #FF712B;
+}
+#appraise .appraise-cont .ape .ape-head .user-name span i {
+  font-size: .32rem;
+}
+#appraise .appraise-cont .ape .ape-head .user-time {
+  font-size: .26rem;
+  float: right;
+}
+#appraise .appraise-cont .ape .ape-head .user-time span {
+  font-size: .26rem;
+  color: #a1a1a1;
+}
+#appraise .appraise-cont .ape .ape-cont {
+  padding: 0 .32rem;
+  border-bottom: 1px solid #BFBFBF;
+  padding-bottom: .2rem;
+}
+#appraise .appraise-cont .ape .ape-cont .conts {
+  font-size: .28rem;
+  color: #303030;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: .3rem;
+}
+#appraise .appraise-cont .ape .ape-cont img {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: .1rem;
+}
+
+#goods-datails {
+  margin: 0 .2rem;
+  background: #fff;
+  margin-top: .1rem;
+  box-shadow: .05rem .05rem .15rem #ccc;
+  border-radius: .1rem;
+  padding-bottom: 1rem;
+}
+#goods-datails .datails-head {
+  font-size: .32rem;
+  color: #303030;
+  text-align: center;
+  line-height: 1.1rem;
+}
+#goods-datails .datails-head s {
+  display: inline-block;
+  width: .36rem;
+  border-bottom: .01rem solid #BFBFBF;
+  margin: 0 .23rem;
+  position: relative;
+  top: -.1rem;
+}
+#goods-datails .datails-mes {
+  margin: 0 .32rem;
+}
+#goods-datails .datails-mes ul li {
+  height: .85rem;
+  line-height: .85rem;
+  border-top: 1px solid #BFBFBF;
+  font-size: .28rem;
+}
+#goods-datails .datails-mes ul li span {
+  color: #303030;
+}
+#goods-datails .datails-img img {
+  width: 100%;
+}
+
+#datails-footer {
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+}
+#datails-footer ul li {
+  float: left;
+  height: 1rem;
+  font-size: .28rem;
+}
+#datails-footer ul .collect {
+  width: 1.5rem;
+  border-right: 1px solid #BFBFBF;
+  text-align: center;
+  line-height: .5rem;
+}
+#datails-footer ul .collect i {
+  font-size: .40rem;
+  position: relative;
+  top: .1rem;
+}
+#datails-footer ul .cart {
+  width: 1.5rem;
+  text-align: center;
+  line-height: .5rem;
+  position: relative;
+}
+#datails-footer ul .cart c {
+  position: absolute;
+  right: .4rem;
+  width: .3rem;
+  height: .3rem;
+  background: #FF712B;
+  border-radius: .2rem;
+  font-size: .2rem;
+  color: #fff;
+  text-align: center;
+  line-height: .3rem;
+  font-style: inherit;
+  z-index: 9999;
+}
+#datails-footer ul .cart i {
+  font-size: .45rem;
+  position: relative;
+  top: .1rem;
+}
+#datails-footer ul .addcart {
+  width: 2.25rem;
+  background: #ffb432;
+  color: #fff;
+  font-size: .28rem;
+  text-align: center;
+  line-height: 1rem;
+}
+#datails-footer ul .buy {
+  width: 2.1rem;
+  background: #ff5d32;
+  color: #fff;
+  font-size: .28rem;
+  text-align: center;
+  line-height: 1rem;
+}
+
+.mask {
+  width: 7.5rem;
+  height: 100%;
+  position: fixed;
+  bottom: 0rem;
+  z-index: 999;
+  background: #000;
+  opacity: 0.5;
+  display: none;
+}
+
+#select {
+  width: 7.5rem;
+  height: 13.5rem;
+  position: fixed;
+  bottom: -13.5rem;
+  z-index: 9999;
+}
+#select .se {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+#select .goods {
+  height: 2rem;
+  margin: 0 .32rem;
+  margin-top: 4rem;
+  background: #fff;
+  border-bottom: 0.02rem solid #e5e5e5;
+  position: relative;
+}
+#select .goods i {
+  position: absolute;
+  right: 0.1rem;
+  top: 0.2rem;
+  font-size: .48rem;
+}
+#select .goods dl {
+  width: 5.5rem;
+}
+#select .goods dl dt {
+  float: left;
+  margin-top: -.4rem;
+  margin-right: .3rem;
+  border-radius: .1rem;
+  overflow: hidden;
+}
+#select .goods dl dt img {
+  width: 1.9rem;
+  height: 1.9rem;
+  border: 0.02rem solid #e5e5e5;
+}
+#select .goods dl dd {
+  font-size: .32rem;
+}
+#select .goods dl .goodsname {
+  padding-top: .2rem;
+  line-height: .5rem;
+  color: #303030;
+}
+#select .goods dl .goodsprice {
+  font-size: .32rem;
+  color: #ff712b;
+  margin-top: .1rem;
+}
+#select .se_nor {
+  overflow: hidden;
+  background: #fff;
+  font-size: .24rem;
+  padding: 0 .32rem;
+}
+#select .se_nor p {
+  padding-top: .29rem;
+  font-size: .28rem;
+  color: #303030;
+  margin-bottom: .3rem;
+}
+#select .se_nor ul {
+  overflow: hidden;
+  padding-bottom: .2rem;
+}
+#select .se_nor ul .active {
+  color: #FF8B00;
+}
+#select .se_nor ul li {
+  float: left;
+  padding: .2rem .4rem;
+  border: 0.02rem solid #e5e5e5;
+  border-radius: .1rem;
+  margin-right: .15rem;
+  margin-bottom: .2rem;
+  font-size: .28rem;
+}
+#select .se_nor ul li:nth-of-type(4n) {
+  margin-right: 0;
+}
+#select .se_sum {
+  font-size: .32rem;
+  padding: 0 .32rem;
+  overflow: hidden;
+}
+#select .se_sum .sum_tit {
+  color: #303030;
+  margin-top: .14rem;
+  font-size: .32rem;
+}
+#select .se_sum .aniu {
+  float: right;
+}
+#select .se_sum .aniu span {
+  display: inline-block;
+  width: .45rem;
+  height: .45rem;
+  border: 0.01rem solid #FF712B;
+  border-radius: .06rem;
+  text-align: center;
+  line-height: .5rem;
+  float: left;
+  color: #FF712B;
+}
+#select .se_sum .aniu input {
+  width: .78rem;
+  height: .5rem;
+  float: left;
+  border: 0.02rem solid #e5e5e5;
+  text-align: center;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+#select .se_sum .aniu #num {
+  border: none;
+  font-size: .28rem;
+}
+#select .se_foot {
+  width: 100%;
+  height: .1rem;
+  position: absolute;
+  bottom: .9rem;
+  border-top: 0.02rem solid #e5e5e5;
+}
+#select .se_foot ul li {
+  float: left;
+  width: 100%;
+  height: 1rem;
+  font-size: .32rem;
+  text-align: center;
+  line-height: 1rem;
+}
+#select .se_foot ul .addcart {
+  background: #FF8B00;
+  color: #fff;
+}
+#select .se_foot ul .g_ds {
+  width: 100%;
+  background: #ccc;
+  color: #fff;
+}
+#select .se_foot ul .cbooks {
+  width: 100%;
+  background: #FF8B00;
+  color: #fff;
+}

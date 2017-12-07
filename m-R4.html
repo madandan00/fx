@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>申请退货</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/border1.css" />
+		<link rel="stylesheet" href="css/m-C3.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_404971_s3rub6z3qn8tcsor.css" />
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="tip " style="margin-top: 0.1rem;">
+				<div class="border1">
+					<i class="iconfont icon-naozhongxianshimiaosha"></i><span>等待卖家打款</span> </div>
+			</div>
+			<div class="description">
+				<p>退款将在3~5个工作日内返回到您的账户</p>
+			</div>
+			<div class="card" style="margin-top: 0.1rem;">
+				<p class="border1"><span>请填写您的账户</span></p>
+				<div class="account border1">
+					<div class="one">
+						<i class="iconfont icon-yuan check"></i>
+						<span>支付宝</span>
+					</div>
+					<div class="one">
+						<i class="iconfont icon-yuan check"></i>
+						<span>微信</span>
+					</div>
+					<div class="one">
+						<i class="iconfont icon-yuan check"></i>
+						<span>银联卡</span>
+					</div>
+				</div>
+				<p id="card-num">
+					<input type="text" placeholder="输入您的支付宝账号" />
+				</p>
+			</div>
+			<div class="tj"><span>提交</span></div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/zepto_1.1.3.js"></script>
+	<script>
+		$(".check").on("click", function() {
+			if($(this).hasClass("icon-yuan")) {
+				$(".check").removeClass("icon-chuangyikongjianICON_fuzhi-").addClass("icon-yuan")
+				$(this).removeClass("icon-yuan").addClass("icon-chuangyikongjianICON_fuzhi-");
+			} 
+		})
+	</script>
+
+</html>

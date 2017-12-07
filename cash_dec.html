@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>提现明细</title>
+    <link rel="stylesheet" type="text/css" href="css/cash_dec.css"/>
+</head>
+<body>
+	 <div class="cash_dec">
+	 	<header>
+	 		<div class="wait">
+	 			<ul>
+	 				<li><a>全部</a></li>
+	 				<li><a>待审核</a></li>
+	 				<li><a>待打款</a></li>
+	 				<li><a>已成功</a></li>
+	 			</ul>
+	 		</div>
+	 	</header>	
+	 	<section>
+	 		 <div class="main">
+	 	    	<div class="all">
+	 	    		<!--正在审核-->
+	 	    		<div class="review">
+	 	    			<div class="rev">提现<span>+￥50.00</span></div>
+	 	    			<div class="rev">申请提现时间<a>15:26:20</a><i>2017.08.10</i></div>
+	 	    			<div class="rev">状态<b>正在审核</b></div>
+	 	    		</div>
+	 	    	    <!--等待打款-->
+	 	    	    <div class="payment">
+	 	    	    	<div class="pay">提现<span>+￥50.00</span></div>
+	 	    			<div class="pay">申请提现时间<a>15:26:20</a><i>2017.08.10</i></div>
+	 	    			<div class="pay">状态<b>等待打款</b></div>
+	 	    	    </div>
+	 	    	    <!--提现成功-->
+	 	    	    <div class="succ">
+	 	    	    	<div class="pay">提现<span>+￥50.00</span></div>
+	 	    			<div class="pay">申请提现时间<a>15:26:20</a><i>2017.08.10</i></div>
+	 	    			<div class="pay">打款时间<a>15:26:20</a><i>2017.08.10</i></div>
+	 	    			<div class="pay">状态<b>已提现成功</b></div>
+	 	    	    </div>
+	 	    	</div>
+	 	    	<div class="audit">
+	 	    		<div class="review">
+	 	    			<div class="rev">提现<span>+￥50.00</span></div>
+	 	    			<div class="rev">申请提现时间<a>15:26:20</a><i>2017.08.10</i></div>
+	 	    			<div class="rev">状态<b>正在审核</b></div>
+	 	    		</div>
+	 	    	</div>
+	 	    	<div class="payments">
+	 	    		<div class="payment">
+	 	    	    	<div class="pay">提现<span>+￥50.00</span></div>
+	 	    			<div class="pay">申请提现时间<a>15:26:20</a><i>2017.08.10</i></div>
+	 	    			<div class="pay">状态<b>等待打款</b></div>
+	 	    	    </div>
+	 	    	</div>
+	 	    	<div class="succe">
+	 	    		 <div class="succ">
+	 	    	    	<div class="suc">提现<span>+￥50.00</span></div>
+	 	    			<div class="suc">申请提现时间<a>15:26:20</a><i>2017.08.10</i></div>
+	 	    			<div class="suc">打款时间<a>15:26:20</a><i>2017.08.10</i></div>
+	 	    			<div class="suc">状态<b>已提现成功</b></div>
+	 	    	    </div>
+	 	    	</div>
+	 	    </div>
+	 	</section>
+	 	
+	 </div>
+</body>
+    <script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".main>div").hide().eq(0).show();
+    		$(".wait ul li").eq(0).addClass("cash_act");
+    		$(".wait ul li").on("click",function(){
+    			$(this).addClass("cash_act").siblings().removeClass("cash_act");
+    			var _index=$(this).index();
+    			$(".main>div ").hide().eq(_index).show();
+    		})
+    	})
+    </script>
+</html>

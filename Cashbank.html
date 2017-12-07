@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>收入佣金</title>
+		<link rel="stylesheet" href="css/cashbank.css" />
+	</head>
+	<body>
+		<!--收入佣金-->
+		<div class="cashbank">
+			<!--头部背景-->
+			<div class="cash-back">
+				<img src="images/backgout.png" class="back-ug" alt="" />
+				<div class="cash-money">
+					<span>200.<i>00</i><i class="yuan">元</i></span>
+				</div>
+				<img src="images/people.png" class="peo-img" alt="" />
+			</div>
+			<!--中间内容-->
+			<div class="cash-sect">
+				<div class="title">
+					<span>可提现金额</span>
+					<p><i>￥50.00</i></p>
+				</div>
+				<ul>
+					<li>
+						<span>待审核佣金</span>
+						<i>￥50.00</i>
+					</li>
+					<li>
+						<span>待打款佣金</span>
+						<i>￥50.00</i>
+					</li>
+					<li>
+						<span>成功提现佣金</span>
+						<i>￥50.00</i>
+					</li>
+				</ul>
+				<a href="commissions.html">
+				<div class="title1">
+					<span>待收货佣金</span>
+				
+						<i>￥50.00</i>
+					<span class="fuhao"></span>
+				</div>
+				</a>
+				<div class="cash-na">
+					<span>用户须知</span>
+					<span class="fuhaot"></span>
+			
+				</div>
+				<div class="name-xuz">
+					<p>买家确认收货后或自动确认收货后（3天），所获佣金可
+                                          提现。结算期内，买家退货，佣金将自动扣除。</p>
+                     <p>注意：佣金满100元后才能申请提现</p>
+				</div>
+				<span class="sq-chas">申请提现</span>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script>
+	$(function(){
+		$(".fuhaot").tap(function(){
+			if($(".name-xuz").css("display")=="none"){ 
+				$(".name-xuz").show({
+					duration: 2000,
+				});
+				$(".fuhaot").css({"transform":"rotateZ(45deg)"});
+				} 
+				else{ 
+				$(".name-xuz").hide(1000);
+				$(".fuhaot").css({"transform":"rotateZ(-45deg)"});
+				} 
+		})
+		$(".sq-chas").tap(function(){
+			window.location.href="WeChatwithdrawa.html";
+		})
+	})
+</script>

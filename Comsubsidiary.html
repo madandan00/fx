@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>佣金明细</title>
+		<link rel="stylesheet" href="css/subsidiary.css" />
+	</head>
+	<body>
+		<div class="subsidiary">
+			<!--背景图-->
+			<div class="subdidt">
+			<div class="commin-head">
+				<img src="images/backgout.png" class="back-img" alt="图片正在加载..." />
+				<div class="img-people">
+				    <span>500</span><i class="yuan">人</i>
+				</div>
+			</div>
+			<img src="images/people.png" class="img-peo" alt="" />
+			<!--导航-->
+			<ul class="sub-nav">
+				<li class="sub-one">全部</li>
+				<li>待审核</li>
+				<li>待打款</li>
+				<li>待收货</li>
+				<li>已成功</li>
+			</ul>
+			</div>
+			<!--内容-->
+			<div class="sub-contentre">
+				<!--全局-->
+		
+				 <div class="subc-dsh">
+				 	<div class="member">
+						<dl>
+							<dt>洗尽铅华的美</dt>
+							<dd>
+							2017.8.09 <i>14:36:00</i>
+							</dd>
+						</dl>
+						<ul>
+							<li>+￥200.00</li>
+							<li>待审核</li>
+						</ul>
+				    </div>
+				    <div class="member">
+						<dl>
+							<dt>洗尽铅华的美</dt>
+							<dd>
+							2017.8.09 <i>14:36:00</i>
+							</dd>
+						</dl>
+						<ul>
+							<li>+￥200.00</li>
+							<li>待审核</li>
+						</ul>
+				    </div>
+				 </div>
+				
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script>
+	$(".sub-nav li").tap(function(){
+	    var _index = $(this).index();
+	    $(this).addClass("sub-one").siblings().removeClass("sub-one");
+	    $(".sub-contentre>div").hide().eq(_index).show();
+	})
+</script>

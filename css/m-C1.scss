@@ -1,0 +1,43 @@
+.content{
+    overflow: hidden;
+}
+.tip{
+    height: 1.4rem;
+    background: #fff;
+    padding: 0 0.32rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    div{
+        width: 100%;
+        height: 100%;
+    }
+    i,span{
+        color: #ff712b;
+        line-height: 1.4rem;
+        float: left;
+    }
+    i{
+        font-size: 0.6rem;
+    }
+    span{
+        font-size: 0.32rem;
+        margin-left: 0.3rem;
+    }
+}
+.description{
+    padding: 0.25rem 0.32rem;
+     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    background: #fff;
+    p{
+        font-size: 0.3rem;
+        color: #333;
+        line-height: 0.6rem;
+    }
+}

@@ -1,0 +1,140 @@
+.content{
+    overflow: hidden;
+}
+.tip {
+    height: 1rem;
+    background: #fff;
+    padding: 0 0.32rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    i,
+    span {
+        color: #ff712b;
+        line-height: 1rem;
+        float: left;
+    }
+    i {
+        font-size: 0.6rem;
+    }
+    span {
+        font-size: 0.32rem;
+        margin-left: 0.3rem;
+    }
+    div {
+        width: 100%;
+        height: 100%;
+    }
+}
+.description {
+    padding: 0 0.32rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    background: #fff;
+    p {
+        font-size: 0.3rem;
+        color: #333;
+        line-height: 1.35rem;
+    }
+}
+.card {
+    width: 100%;
+    font-size: 12px;
+    p {
+        height: 0.7rem;
+        background: #fff;
+        line-height: 0.7rem;
+        padding: 0 0.32rem;
+        background: #fff;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        span {
+            font-size: 0.26rem;
+            color: #303030;
+        }
+    }
+    .account {
+        height: 0.9rem;
+        background: #fff;
+        padding: 0 0.32rem;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        .one {
+            float: left;
+            width: 2.1rem;
+            height: 0.9rem;
+            i,
+            span {
+                line-height: 0.9rem;
+                float: left;
+            }
+            i {
+                font-size: 0.3rem;
+            }
+            span {
+                color: #303030;
+                margin-left: 0.25rem;
+                font-size: 0.26rem;
+            }
+            .icon-yuan {
+                color: #c4c4c4;
+            }
+            .icon-chuangyikongjianICON_fuzhi- {
+                color: #ff712b;
+            }
+        }
+    }
+}
+#card-num {
+    width: 100%;
+    height: 1.6rem;
+    padding: 0 0.32rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    background: #fff;
+    input {
+        width: 100%;
+        height: 0.75rem;
+        border: 1px solid #bfbfbf;
+        margin-top: 0.4rem;
+        border-radius: 0.1rem;
+        padding: 0 0.1rem;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -webkit-border-radius: 0.1rem;
+        -moz-border-radius: 0.1rem;
+        -ms-border-radius: 0.1rem;
+        -o-border-radius: 0.1rem;
+    }
+}
+.tj{
+     width: 100%;
+    height: 1rem;
+    background: #ff712b;
+    position: fixed;
+    bottom: 0;
+    font-size: 10px;
+    text-align: center;
+    span{
+        font-size: 0.32rem;
+        color: #fff;
+        line-height: 1rem;
+    }
+}

@@ -1,0 +1,128 @@
+@import url("public.css");
+html {
+  font-size: 13.333vm; }
+
+.conupons {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+  .conupons .conuptitle {
+    width: 100%;
+    height: 0.8rem;
+    background: #303030; }
+    .conupons .conuptitle ul {
+      display: -webkit-box;
+      -webkit-box-orient: horizontal; }
+      .conupons .conuptitle ul li {
+        font-size: 0.28rem;
+        color: #FFFFFF;
+        -webkit-box-flex: 1;
+        text-align: center;
+        line-height: 0.8rem; }
+        .conupons .conuptitle ul li a {
+          color: #FFFFFF; }
+      .conupons .conuptitle ul .active-a a {
+        color: #ff712b;
+        font-size: 0.28rem; }
+  .conupons p {
+    width: 100%;
+    height: 0.48rem;
+    background: none;
+    font-size: 0.24rem;
+    color: #909090;
+    line-height: 0.48rem;
+    position: relative; }
+    .conupons p img {
+      width: 0.27rem;
+      height: 0.27rem;
+      background: none;
+      position: absolute;
+      right: 1.36rem;
+      top: 0.1rem; }
+    .conupons p a {
+      float: right;
+      margin-right: 0.3rem;
+      color: #909090; }
+  .conupons .coupyhq {
+    width: 100%;
+    height: auto;
+    background: none;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    box-sizing: border-box; }
+    .conupons .coupyhq .yishiyong {
+      display: none; }
+    .conupons .coupyhq .theryh {
+      width: 100%;
+      height: 2.2rem;
+      background: red;
+      background: url(../images/coupmon2.png) no-repeat;
+      background-size: 100% 100%;
+      margin-bottom: 0.1rem;
+      position: relative; }
+      .conupons .coupyhq .theryh span {
+        font-size: 1rem;
+        color: #ffffff;
+        font-weight: bold;
+        position: absolute;
+        top: 0.4rem;
+        left: 1.05rem; }
+      .conupons .coupyhq .theryh i {
+        font-size: 0.28rem;
+        color: #FFFFFF;
+        position: absolute;
+        bottom: 0.1rem;
+        left: 1.5rem;
+        font-weight: 400; }
+      .conupons .coupyhq .theryh a {
+        display: inline-block;
+        width: 0.45rem;
+        height: 1.5rem;
+        background: none;
+        font-size: 0.42rem;
+        color: #50cec0;
+        position: absolute;
+        right: 0.6rem;
+        top: 0.3rem; }
+  .conupons .nogengyh {
+    width: 100%;
+    height: 0.3rem;
+    background: none;
+    margin-top: 0.48rem;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal; }
+    .conupons .nogengyh p {
+      font-size: 0.24rem;
+      color: #606060;
+      -webkit-box-flex: 1;
+      text-align: center; }
+  .conupons .looksix {
+    width: 100%;
+    height: 0.3rem;
+    background: none;
+    margin-top: 0.21rem;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal; }
+    .conupons .looksix .aa {
+      display: block;
+      -webkit-box-flex: 1;
+      text-align: center;
+      font-size: 0.24rem; }
+      .conupons .looksix .aa a {
+        color: #ff712b; }
+.weishiyong dl{
+	position: absolute;
+	left: 1.9rem;
+	top: 0.5rem;
+}
+.weishiyong dl dt{
+	font-size: 0.33rem;
+	color: #EFEFEF;
+}
+.weishiyong dl dd{
+	font-size: 0.55rem;
+	color: #fff;
+}
+/*# sourceMappingURL=coupons.css.map */

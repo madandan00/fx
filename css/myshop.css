@@ -1,0 +1,213 @@
+@import url("reset.css");
+html {
+  font-size: 13.333vw; }
+
+.myshop {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  background: url(../images/qiabdo_02.png) no-repeat;
+  background-size: 100% 100%; }
+  .myshop .signin {
+    width: 100%;
+    height: 100%;
+    background: none;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    padding-top: 2.07rem;
+    box-sizing: border-box; }
+    .myshop .signin .todaysign {
+      width: 100%;
+      height: auto;
+      background: #ffffff;
+      padding-top: 0.3rem;
+      box-sizing: border-box;
+      border-radius: 0.15rem;
+      position: relative;
+      padding-bottom: 0.2rem; }
+      .myshop .signin .todaysign .tixia {
+        width: 3.07rem;
+        height: 0.62rem;
+        background: none;
+        margin-left: 1.9rem;
+        margin-top: 0.15rem; }
+      .myshop .signin .todaysign .lianxu {
+        font-size: 0.28rem;
+        color: #ffffff;
+        position: absolute;
+        top: 2rem;
+        left: 2.7rem; }
+      .myshop .signin .todaysign .orginrb {
+        width: 1.5rem;
+        height: 1.5rem;
+        background: #ffd4bf;
+        border-radius: 50%;
+        margin-left: 2.67rem;
+        position: relative; }
+        .myshop .signin .todaysign .orginrb .whiteor {
+          width: 1.3rem;
+          height: 1.3rem;
+          background: #ffffff;
+          border-radius: 50%;
+          position: absolute;
+          top: 0.09rem;
+          left: 0.09rem;
+          border: 0.01rem solid #ffb692;
+          text-align: center;
+          margin-bottom: 0.2rem; }
+          .myshop .signin .todaysign .orginrb .whiteor dl dt {
+            font-size: 0.28rem;
+            margin-top: 0.25rem; }
+          .myshop .signin .todaysign .orginrb .whiteor dl dd {
+            font-size: 0.28rem;
+            margin-top: 0.1rem; }
+    .myshop .signin .daysing {
+      width: 100%;
+      height: 3rem;
+      background: none;
+      margin-top: 0.1rem; }
+      .myshop .signin .daysing ul {
+        display: -webkit-box;
+        -webkit-box-orient: horizontal; }
+        .myshop .signin .daysing ul li {
+          -webkit-box-flex: 1; }
+          .myshop .signin .daysing ul li:nth-child(2) {
+            margin-left: 0.1rem;
+            margin-right: 0.1rem; }
+          .myshop .signin .daysing ul li img {
+            width: 100%;
+            height: 3rem;
+            background: none; }
+  .myshop .rule {
+    width: 100%;
+    height: 2.2rem;
+    background: none;
+    margin-top: 0.35rem; }
+    .myshop .rule h4 {
+      font-size: 0.30rem;
+      color: #606060; }
+    .myshop .rule ul li {
+      font-size: 0.24rem;
+      color: #606060;
+      margin-top: 0.2rem; }
+
+.qiandosucc {
+  width: 100%;
+  height: 100%;
+  background: #8c8c8c;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 99999; }
+  .qiandosucc img {
+    width: 5.43rem;
+    height: 3.11rem;
+    background: none;
+    margin-top: 3.5rem;
+    margin-left: 1.2rem; }
+
+.tizhi {
+  width: 100%;
+  height: 100%;
+  background: #8c8c8c;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none; }
+  .tizhi .hehe {
+    width: 100%;
+    height: auto;
+    background: none;
+    padding-left: 0.75rem;
+    padding-right: 0.3rem;
+    padding-top: 2.3rem;
+    box-sizing: border-box;
+    /* for IE6 IE7 */ }
+    .tizhi .hehe .clear {
+      clear: both;
+      height: 0;
+      overflow: hidden;
+      display: block;
+      line-height: 0; }
+    .tizhi .hehe .clearfix:after {
+      clear: both;
+      font-size: 0;
+      height: 0;
+      display: block;
+      visibility: hidden;
+      content: " ";
+      line-height: 0; }
+    .tizhi .hehe .clearfix {
+      zoom: 1; }
+    .tizhi .hehe .title {
+      height: 0.36rem;
+      line-height: 0.36rem;
+      font-size: 0.16rem;
+      margin-bottom: 0.1rem; }
+    .tizhi .hehe .title p {
+      float: left;
+      width: 80%;
+      height: 0.36rem;
+      line-height: 0.36rem;
+      font-size: 0.16rem;
+      background: #FFFFFF;
+      color: #606060; }
+    .tizhi .hehe .title i {
+      display: inline-block;
+      width: 20%;
+      height: 0.36rem;
+      line-height: 0.36rem;
+      text-align: center;
+      background: #42941a;
+      border-radius: 0.05rem;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.16rem; }
+    .tizhi .hehe .checkin li {
+      background: #fee684;
+      float: left;
+      padding: 0.1rem;
+      text-align: center;
+      color: #606060;
+      font-size: 0.28rem;
+      background: #ffffff; }
+    .tizhi .hehe .calendarList {
+      background: none; }
+    .tizhi .hehe .week li {
+      width: 0.5rem;
+      height: 0.5rem;
+      float: left;
+      border-right: '1px solid #f90';
+      border-bottom: '1px solid #f90';
+      box-sizing: 'border-box';
+      color: "#b25d06"; }
+    .tizhi .hehe .calendarList li {
+      width: 0.5rem;
+      height: 0.5rem;
+      float: left;
+      border-right: '1px solid #f90';
+      border-bottom: '1px solid #f90';
+      box-sizing: 'border-box';
+      color: "#b25d06"; }
+    .tizhi .hehe li.able-qiandao {
+      background: #e9c530; }
+    .tizhi .hehe li.checked {
+      background: #fee684 url("../images/check.png") no-repeat center;
+      background-size: 0.6rem 0.6rem; }
+    .tizhi .hehe a.closeBtn {
+      display: block;
+      position: absolute;
+      right: 0.1rem;
+      top: 0.05rem;
+      font-family: 'simsun';
+      font-size: 0.18rem;
+      text-decoration: none;
+      font-weight: bolder;
+      color: #333; }
+
+/*# sourceMappingURL=myshop.css.map */

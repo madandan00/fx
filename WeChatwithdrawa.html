@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>提现页面</title>
+		<link rel="stylesheet" href="css/WeChatwithdrawa.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_404971_fdyacfcoph6ko6r.css" />
+	</head>
+	<body>
+		<div class="wechatwidth">
+		<div class="wech-content">
+			<p class="wecah-fres">
+				单笔提现限额当前余额的80%，每月可提现5次
+			</p>
+			<div class="todaybalance">
+				<h3>当前余额</h3>
+				<p>￥1000<i>.00</i></p>
+				 <a href="bankwithdrawal.html"><h4 class="a">明细<span class="fuhao"></span></h4></a>
+			</div>
+			<!--提现金额-->
+			<div class="bananwechat">
+				<h4>提现金额</h4>
+				<div class="tixian">
+					<div class="monry">
+						<i>￥</i><input type="text" value="" placeholder="请输入提现金额"/>
+					</div>
+					<span>全部提现</span>
+				</div>
+				<p>可提现金额<span>￥800.00</span></p>
+			</div>
+			<!--手续费-->
+			<div class="poundage">
+				<h4>手续费</h4>
+				<p><i>￥</i>1000<i>.00</i></p>
+				 <h4 class="a">无可使用提现券<a href="#"><span class="fuhao"></span></a></h4>
+			</div>
+			<!--提现账户-->
+			<div class="accoutban">
+				<h4>提现账户</h4> 
+				<div class="paypayment">
+					<i class="iconfont icon-weixin"></i>
+					<b data-id="">微信</b>
+					<a href="#"><span></span></a>
+				</div>
+			</div>
+			<div class="bank-id">
+				<p>请填写下面的提现信息</p>
+				<ul>
+					<li>
+						<label>收款人姓名</label>
+	                    <input type="text" name="pwd1" class="form-control" placeholder="填写收款人真实姓名">
+					</li>
+					<li>
+						<label>收款人电话</label>
+	                    <input type="text" name="pwd1" class="form-control" placeholder="填写收款人手机号码">
+					</li>
+					<li>
+						<label>提现账号</label>
+	                    <input type="text" name="pwd1" class="form-control" placeholder="填写收款人收款账号">
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="Applyfor">
+				<a href="Cashwithdrawal.html"><span>立即申请</span></a>
+			</div>
+		</div>
+		<!--遮罩层-->
+		<div class="apply-zhe">
+			<div class="pay-type">
+				<p class="off-i">提现账户<i class="iconfont icon-weibiaoti101"></i></p>
+				<div class="pay-weixin">
+				    <div  class="weixin">
+				    	 <i class="iconfont icon-weixin" style="color: #09bb07;"></i>
+				    	 <dl>
+				    	 	<dt data-id="0">微信</dt>
+				    	 	<dd>微信提现</dd>
+				    	 </dl>
+				    	 <label class="all" id="alls">
+				           <input type="radio" value="0" name="abc">
+								<i>✓</i>
+					    </label>
+				    </div>
+				      <div  class="zhifubao">
+				    	 <i class="iconfont icon-zhifubao" style="color:#0aaaf0;"></i>
+				    	 <dl>
+				    	 	<dt data-id="1">支付宝</dt>
+				    	 	<dd>支付宝提现</dd>
+				    	 </dl>
+				    	 <label class="all" id="alls">
+				           <input type="radio" class="zhifu" value="1" name="abc">
+								<i>✓</i>
+					    </label>
+				    </div>
+				      <div  class="yinlianla">
+				      	<img src="images/yinlain_07.png" alt="" />
+				          <dl>
+				    	 	<dt data-id="2">银联卡</dt>
+				    	 	<dd>银联卡提现</dd>
+				    	 </dl>
+				    	 <label class="all" id="alls">
+				           <input type="radio" class="alla" value="2" name="abc">
+								<i>✓</i>
+					    </label>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script>
+
+    /*遮罩层*/
+	$(function(){
+		$(".paypayment span").tap(function(){
+			$(".apply-zhe").fadeIn(2000);;
+			$(this).css({"transform":"rotateZ(135deg)"});
+		})
+		$(".off-i i").click(function(){
+			$(".apply-zhe").fadeOut(1000);
+			$(".paypayment span").css({"transform":"rotateZ(45deg)"});
+		})
+		/*填写信息*/
+		/*$(".bank-id").hide();*/
+		$(".off-i i").tap(function(){
+			if($(".paypayment b").attr("data-id")!=""){
+				$(".bank-id").show();
+			}
+		})
+		/*选择支付方式*/
+		$(".all").tap(function(){
+			var chkRadio = $('.all input:checked').val();
+			var _text=$(".paypayment b").text();
+			 if (chkRadio == null) {
+		          alert("没有选中项");
+		          return false;
+		        } else if(chkRadio=="1"){
+		            var _textz=$(".zhifubao dt").text();
+		            var data_id =$(".zhifubao dt").attr("data-id");
+		            $(".paypayment i").removeClass("icon-weixin").addClass("icon-zhifubao");
+		            $(".paypayment img").replaceWith("<i class='iconfont icon-zhifubao'></i>");
+		            $(".paypayment i").css("color","#0aaaf0");
+		            $(".paypayment b").text(_textz);
+		            $(".paypayment b").attr("data-id",data_id);
+		         }else if(chkRadio=="0"){
+		            var _textwx=$(".weixin dt").text();
+		            var data_id =$(".weixin dt").attr("data-id");
+		             $(".paypayment b").text(_textwx);
+		             $(".paypayment b").attr("data-id",data_id)
+		             $(".paypayment i").removeClass("icon-zhifubao").addClass("icon-weixin");
+		             $(".paypayment i").css("color","#09bb07");
+		         }else if(chkRadio=="2"){
+		         	  var _textyl=$(".yinlianla dt").text();
+		         	  var data_id =$(".yinlianla dt").attr("data-id");
+		             $(".paypayment b").text(_textyl);
+		             $(".paypayment b").attr("data-id",data_id)
+		             $(".paypayment i").replaceWith("<img src='images/yinlain_07.png' alt='' />");
+		         }
+	})
+	})
+</script>

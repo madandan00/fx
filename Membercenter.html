@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/Membercenter.css" />
+		<title>会员中心</title>
+	</head>
+	<body>
+		<div class="Membercenter">
+			<div class="menber-top">
+				<img src="images/mener.png"/>
+				<dl>
+					<dt>小猫猫儿仙儿</dt>
+                     <dd>v1黄金会员</dd>
+				</dl>
+			</div>
+			<div class="title-di">
+				<div class="title-white">
+					<dl>
+						<dt>1200</dt>
+						<dd>成长值</dd>
+					</dl>
+					<span></span>
+					<dl>
+						<dt>500</dt>
+						<dd>积分</dd>
+					</dl>
+				</div>
+			</div>
+			<p class="pd"></p>
+			<div class="membervi">
+				<div class="wodedj">
+					<h4>我的等级</h4>
+					<p>距下一等级还差200成长值</p>
+					<span></span>
+				</div>
+				<div class="wodedja">
+					<h4>我的专属权益</h4>
+					<span class="zsqy"></span>
+				</div>
+				<div class="therement">
+					
+					<dl class="shopyh">
+						<dt><img src="images/teh_07.png"/></dt>
+						<dd>店铺特惠</dd>
+					</dl>
+			
+					<dl class="happyh">
+						<dt><img src="images/srjx_09.jpg"/></dt>
+						<dd>生日惊喜</dd>
+					</dl>
+					<dl class="jingyh">
+						<dt><img src="images/wwwww_11.jpg"/></dt>
+						<dd>评论奖励</dd>
+					</dl>
+					<dl class="baoyhy">
+						<dt><img src="images/bylq_13.jpg"/></dt>
+						<dd>包邮礼券</dd>
+					</dl>
+				</div>
+		   </div>
+		   <a href="Mypoints.html">
+		   <div class="mylog">
+				<h4>我的积分</h4>
+				<i>500</i>
+				<span></span>
+		   </div>
+		   </a>
+		     <div class="mylog">
+				<h4>我的小店</h4>
+				
+				<a href="#"><span></span></a>
+		   </div>
+		     <div class="mylog mylog-shop">
+				<h4>我的下线</h4>
+				
+				<span></span>
+		   </div>
+		</div>
+	</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script>
+    $('.therement').hide();
+	$(".wodedja").tap(function(){
+			if($(".therement").css("display")=="none"){ 
+				$(".therement").show({
+					duration: 2000,
+				});
+				$(".zsqy").css({"transform":"rotateZ(135deg)"});
+				} 
+				else{ 
+				$(".therement").hide(1000);
+				$(".zsqy").css({"transform":"rotateZ(45deg)"});
+				} 
+	})
+	$(".shopyh").tap(function(){
+		window.location.href="privilege.html?date-id=1";
+	})
+	$(".happyh").tap(function(){
+		window.location.href="privilege.html?date-id=2";
+	})
+	$(".jingyh").tap(function(){
+		window.location.href="privilege.html?date-id=3";
+	})
+	$(".baoyhy").tap(function(){
+		window.location.href="privilege.html?date-id=4";
+	})
+	$(".wodedj").tap(function(){
+		window.location.href="mem_grade.html";
+	})
+	$(".mylog-shop").tap(function(){
+		window.location.href="Ireferrals.html";
+	})
+</script>

@@ -1,0 +1,393 @@
+@import url("public.css");
+html {
+  font-size: 13.333vw; }
+
+.wechatwidth {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+  .wechatwidth .wech-content {
+    -webkit-box-flex: 1;
+    overflow-y: auto; }
+    .wechatwidth .wech-content::-webkit-scrollbar {
+      width: 0; }
+    .wechatwidth .wech-content .wecah-fres {
+      width: 100%;
+      height: 0.65rem;
+      background: none;
+      line-height: 0.65rem;
+      font-size: 0.24rem;
+      padding-left: 0.3rem;
+      box-sizing: border-box; }
+    .wechatwidth .wech-content .todaybalance {
+      width: 100%;
+      height: 1rem;
+      background: #ffffff;
+      padding: 0 0.3rem 0 0.3rem;
+      box-sizing: border-box;
+      line-height: 1rem;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal; }
+      .wechatwidth .wech-content .todaybalance h3 {
+        list-style: none;
+        font-weight: normal;
+        font-size: 0.3rem;
+        color: #303030; }
+      .wechatwidth .wech-content .todaybalance p {
+        margin-left: 0.54rem;
+        -webkit-box-flex: 1;
+        font-size: 0.3rem;
+        color: #303030; }
+        .wechatwidth .wech-content .todaybalance p i {
+          font-size: 0.24rem; }
+      .wechatwidth .wech-content .todaybalance .a {
+        font-weight: normal;
+        font-size: 0.30rem;
+        color: #666666; }
+      .wechatwidth .wech-content .todaybalance .fuhao {
+        display: inline-block;
+        width: 0.2rem;
+        height: 0.2rem;
+        /*background: red;*/
+        border: 0.02rem solid;
+        transform: rotateZ(45deg);
+        border-bottom: none;
+        border-left: none;
+        vertical-align: middle; }
+    .wechatwidth .wech-content .bananwechat {
+      margin-top: 0.1rem;
+      width: 100%;
+      height: 2.36rem;
+      background: #ffffff;
+      padding: 0.37rem 0.3rem 0 0.3rem;
+      box-sizing: border-box; }
+      .wechatwidth .wech-content .bananwechat h4 {
+        font-weight: normal;
+        font-size: 0.30rem;
+        color: #666666; }
+      .wechatwidth .wech-content .bananwechat .tixian {
+        width: 100%;
+        height: 0.9rem;
+        background: none;
+        border-bottom: 0.02rem solid #ff712b;
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+        line-height: 0.9rem; }
+        .wechatwidth .wech-content .bananwechat .tixian .monry {
+        	 display: -webkit-box;
+        -webkit-box-orient: horizontal;
+          -webkit-box-flex: 1;
+          font-size: 0.3rem;
+          color: #303030;
+          line-height: 0.9rem;
+          margin-left: 0.6rem; }
+          .tixian i{
+          	display: block;
+          }
+          .wechatwidth .wech-content .bananwechat .tixian .monry input {
+          	width: 100%;
+          	height: 100%;
+          	margin-top: 0.3rem;
+          	display: block;
+          	border: none;
+            font-size: 0.30rem;
+            color: #666666; }
+        .wechatwidth .wech-content .bananwechat .tixian span {
+          margin-top: 0.2rem;
+          display: block;
+          width: 1.4rem;
+          height: 0.4rem;
+          background: none;
+          border: 0.01rem solid #ff7835;
+          font-size: 0.24rem;
+          color: #ff712b;
+          text-align: center;
+          line-height: 0.4rem;
+          border-radius: 0.5rem; }
+      .wechatwidth .wech-content .bananwechat p {
+        margin-top: 0.2rem;
+        font-size: 0.24rem;
+        color: #909090; }
+    .wechatwidth .wech-content .poundage {
+      margin-top: 0.1rem;
+      width: 100%;
+      height: 1rem;
+      background: #ffffff;
+      padding: 0 0.3rem 0 0.3rem;
+      box-sizing: border-box;
+      line-height: 1rem;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal; }
+      .wechatwidth .wech-content .poundage h4 {
+        font-weight: normal;
+        font-size: 0.30rem;
+        color: #303030; }
+      .wechatwidth .wech-content .poundage p {
+        -webkit-box-flex: 1;
+        font-size: 0.3rem;
+        color: #303030;
+        line-height: 1rem;
+        margin-left: 0.8rem; }
+        .wechatwidth .wech-content .poundage p i {
+          font-size: 0.24rem;
+          color: #303030; }
+      .wechatwidth .wech-content .poundage .a {
+        color: #ff712b; }
+        .wechatwidth .wech-content .poundage .a span {
+          display: inline-block;
+          width: 0.2rem;
+          height: 0.2rem;
+          /*background: red;*/
+          border: 0.02rem solid #333333;
+          transform: rotateZ(45deg);
+          border-bottom: none;
+          border-left: none;
+          vertical-align: middle; }
+          .bank-id{
+          	width: 100%;
+          	height: auto;
+          	display: none;
+          }
+          .bank-id p{
+          		font-size: 0.28rem;
+          		color: #606060;
+          		line-height:0.65rem;
+          		margin-left: 0.3rem;
+          }
+          .bank-id ul{
+          	width: 100%;
+          	height: auto;
+          	background: #FFFFFF;
+          	padding-left: 0.3rem;
+          	box-sizing: border-box;
+          }
+          .bank-id ul li{
+          	width: 100%;
+          	height: 1.1rem;
+          	border-bottom: 0.01rem solid #bfbfbf;
+          	 display: -webkit-box;
+            -webkit-box-orient: horizontal; 
+          }
+          .bank-id label{
+          	font-size: 0.28rem;
+          	color: #303030;
+          	line-height: 1.1rem;
+          	display: block;
+          }
+          .bank-id input{
+          	vertical-align: middle;
+          	margin-left: 0.37rem;
+          	width: 100%;
+          	height: 0.6rem;
+          	border: none;
+            line-height: 1.1rem;
+             margin-top: -0.2rem;
+             font-size: 0.28rem;
+             color: #606060;
+            }
+    .wechatwidth .wech-content .accoutban {
+      margin-top: 0.1rem;
+      width: 100%;
+      height: 1rem;
+      background: #ffffff;
+      padding: 0 0.3rem 0 0.3rem;
+      box-sizing: border-box;
+      line-height: 1rem; }
+      .wechatwidth .wech-content .accoutban h4 {
+        font-weight: normal;
+        font-size: 0.30rem;
+        color: #303030;
+        float: left; }
+      .wechatwidth .wech-content .accoutban .paypayment {
+        float: right;
+        font-size: 0.3rem;
+        color: #606060; }
+        .wechatwidth .wech-content .accoutban .paypayment i {
+          font-size: 0.52rem;
+          color: #09bb07;
+          vertical-align: middle; }
+        .wechatwidth .wech-content .accoutban .paypayment b {
+          font-weight: normal; }
+        .wechatwidth .wech-content .accoutban .paypayment img {
+          width: 0.52rem;
+          height: 0.4rem;
+          background: none;
+          vertical-align: middle; }
+        .wechatwidth .wech-content .accoutban .paypayment span {
+          display: inline-block;
+          width: 0.2rem;
+          height: 0.2rem;
+          /*background: red;*/
+          border: 0.02rem solid #333333;
+          transform: rotateZ(45deg);
+          border-bottom: none;
+          border-left: none; }
+  .wechatwidth .Applyfor {
+    width: 100%;
+    height: 1rem;
+    background: red; }
+    .wechatwidth .Applyfor span {
+      display: block;
+      width: 100%;
+      height: 1rem;
+      background: #ff712b;
+      font-size: 0.3rem;
+      color: #FFFFFF;
+      text-align: center;
+      line-height: 1rem; }
+
+.apply-zhe {
+  width: 100%;
+  height: 100%;
+  background: #8c8c8c;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none; }
+  .apply-zhe .pay-type {
+    width: 100%;
+    height: 5.76rem;
+    background: #ffffff;
+    position: absolute;
+    bottom: 0px; }
+    .apply-zhe .pay-type p {
+      width: 100%;
+      height: 0.85rem;
+      background: none;
+      font-size: 0.3rem;
+      color: #303030;
+      line-height: 0.85rem;
+      padding-left: 0.3rem;
+      box-sizing: border-box;
+      border-bottom: 1px solid #909090; }
+      .apply-zhe .pay-type p i {
+        float: right;
+        margin-right: 0.5rem;
+        font-size: 0.5rem; }
+    .apply-zhe .pay-type .pay-weixin {
+      width: 100%;
+      height: auto;
+      background: none;
+      padding-left: 0.8rem;
+      padding-right: 0.3rem;
+      box-sizing: border-box; }
+      .apply-zhe .pay-type .pay-weixin label {
+        color: #666;
+        cursor: pointer;
+        position: relative;
+        float: right;
+        margin-right: 0.1rem; }
+      .apply-zhe .pay-type .pay-weixin label .all {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        opacity: 0; }
+      .apply-zhe .pay-type .pay-weixin label .one {
+        position: absolute;
+        left: 0px;
+        top: 10px;
+        opacity: 0; }
+      .apply-zhe .pay-type .pay-weixin label i {
+        margin-top: 0.3rem;
+        margin-right: 0.1rem;
+        font-size: 0.3rem;
+        display: inline-block;
+        width: 0.32rem;
+        height: 0.32rem;
+        text-align: center;
+        line-height: 0.3rem;
+        color: #fff;
+        border: #818181 1px solid; }
+      .apply-zhe .pay-type .pay-weixin input[type="checkbox"],
+      .apply-zhe .pay-type .pay-weixin input[type="radio"] {
+        display: none; }
+      .apply-zhe .pay-type .pay-weixin input[type="radio"] + i {
+        border-radius: 50%; }
+      .apply-zhe .pay-type .pay-weixin input[type="checkbox"]:checked + i,
+      .apply-zhe .pay-type .pay-weixin input[type="radio"]:checked + i {
+        background: #ff712b; }
+      .apply-zhe .pay-type .pay-weixin input[type="checkbox"]:disabled + i,
+      .apply-zhe .pay-type .pay-weixin input[type="radio"]:disabled + i {
+        border-color: #ccc; }
+      .apply-zhe .pay-type .pay-weixin input[type="checkbox"]:checked:disabled + i,
+      .apply-zhe .pay-type .pay-weixin input[type="radio"]:checked:disabled + i {
+        background: #ccc; }
+      .apply-zhe .pay-type .pay-weixin .weixin {
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+        width: 100%;
+        height: 1rem;
+        background: none;
+        border-bottom: 1px solid #909090;
+        font-size: 0.24rem; }
+        .apply-zhe .pay-type .pay-weixin .weixin img {
+          width: 0.52rem;
+          height: 0.32rem;
+          background: none;
+          vertical-align: middle;
+          margin-top: 0.3rem; }
+        .apply-zhe .pay-type .pay-weixin .weixin i {
+          line-height: 1rem;
+          font-size: 0.5rem; }
+        .apply-zhe .pay-type .pay-weixin .weixin dl {
+          -webkit-box-flex: 1;
+          margin-left: 0.3rem; }
+          .apply-zhe .pay-type .pay-weixin .weixin dl dt {
+            margin-top: 0.2rem;
+            color: #303030; }
+          .apply-zhe .pay-type .pay-weixin .weixin dl dd {
+            color: #606060; }
+      .apply-zhe .pay-type .pay-weixin .zhifubao {
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+        width: 100%;
+        height: 1rem;
+        background: none;
+        border-bottom: 1px solid #909090;
+        font-size: 0.24rem; }
+        .apply-zhe .pay-type .pay-weixin .zhifubao img {
+          width: 0.52rem;
+          height: 0.32rem;
+          background: none;
+          vertical-align: middle;
+          margin-top: 0.3rem; }
+        .apply-zhe .pay-type .pay-weixin .zhifubao i {
+          line-height: 1rem;
+          font-size: 0.5rem; }
+        .apply-zhe .pay-type .pay-weixin .zhifubao dl {
+          -webkit-box-flex: 1;
+          margin-left: 0.3rem; }
+          .apply-zhe .pay-type .pay-weixin .zhifubao dl dt {
+            margin-top: 0.2rem;
+            color: #303030; }
+          .apply-zhe .pay-type .pay-weixin .zhifubao dl dd {
+            color: #606060; }
+      .apply-zhe .pay-type .pay-weixin .yinlianla {
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+        width: 100%;
+        height: 1rem;
+        background: none;
+        font-size: 0.24rem; }
+        .apply-zhe .pay-type .pay-weixin .yinlianla img {
+          width: 0.52rem;
+          height: 0.32rem;
+          background: none;
+          vertical-align: middle;
+          margin-top: 0.3rem; }
+        .apply-zhe .pay-type .pay-weixin .yinlianla i {
+          line-height: 1rem;
+          font-size: 0.5rem; }
+        .apply-zhe .pay-type .pay-weixin .yinlianla dl {
+          -webkit-box-flex: 1;
+          margin-left: 0.3rem; }
+          .apply-zhe .pay-type .pay-weixin .yinlianla dl dt {
+            margin-top: 0.2rem;
+            color: #303030; }
+          .apply-zhe .pay-type .pay-weixin .yinlianla dl dd {
+            color: #606060; }
+
+/*# sourceMappingURL=WeChatwithdrawa.css.map */

@@ -1,0 +1,65 @@
+@import url(public.css);
+html {
+  font-size: 13.333vw;
+}
+html,
+body,
+.exten {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.exten {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+section {
+  -webkit-box-flex: 1;
+  background: #f0f0f0;
+}
+.intro {
+  width: 100%;
+  height: 5.02rem;
+  background: #ffffff;
+  padding-left: 0.33rem ;
+  box-sizing: border-box;
+  margin-top: 0.1rem;
+}
+.intro .in_tab {
+  width: 100%;
+  height: 5.02rem;
+  background: #ffffff;
+}
+.intro .in_tab tr {
+  border-bottom: 1px solid #F0F0F0;
+}
+.intro .in_tab td {
+  height: 0.99rem;
+}
+.intro .in_tab td:nth-child(1){
+	font-size: 0.3rem;
+}
+.intro .in_tab td img {
+  width: 0.8rem;
+  height: auto;
+  background: none;
+}
+.intro .in_tab td input {
+  border: none;
+  outline: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.intro .in_tab td input::-webkit-input-placeholder{
+	font-size: 0.24rem;
+}
+.intro .in_tab .coments {
+  width: 95%;
+  height: 100%;
+  border: none;
+}
+.intro .in_tab ::-webkit-input-placeholder {
+  color: #909090;
+  font-size: 0.24rem;
+}

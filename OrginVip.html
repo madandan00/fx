@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<link rel="stylesheet" href="css/orgin.css" />
+	</head>
+	<body>
+		<!--vIp申请-->
+		<div class="swrepp">
+			<div class="orgi-sect">
+				<div class="orgi-qqxx">
+					<p><span>青青小仙</span>推荐你成为<span>青青优农</span>VIP。</p>
+				</div>
+				<div class="copase">
+					<ul>
+						<li class="weixin">关注微信公众号</li>
+						<li class="gun-zhu">先关注微信公众号才可以加入VIP</li>
+					</ul>
+					<span id="btn" onclick="change()">关注</span>
+				</div>
+				<div class="justification">
+					<p>变身VIP的理由</p>
+				</div>
+				 <div class="reason-app">
+            	<div class="img-apply">
+            		<dl>
+            			<dt><img src="images/img-a_03.jpg"/></dt>
+            			<dd>拥有自己的微店</dd>
+            			<dd>和推广二维码</dd>
+            		</dl>
+            		<dl>
+            			<dt><img src="images/fithgkl_05.jpg"/></dt>
+            			<dd>微店卖出商品</dd>
+            			<dd>您可以获得佣金</dd>
+            		</dl>
+            	</div>
+            	<p>VIP的商品销售统一由厂家直接收款、直接发货，并提供产品的售后服务，分销佣金由厂家统一设置。</p>
+            </div>
+            <div class="vip-level">
+            	<p>VIP等级说明与佣金分配制度</p>
+            	<span>了解详情</span>
+            </div>
+			</div>
+			<div class="orgi-foot">
+			    <span>加入VIP</span>
+			</div>
+		</div>
+		<!--底部遮罩-->
+		<div class="mask">
+					<div class="vip-success">
+				      <img src="images/back_03.jpg" class="back-off"/>
+				      <img src="images/vip_03.png" class="vip-img"/>
+				    <div class="vip-shop">
+				    	  <p>恭喜您成为青青VIP</p>
+				    	  <span>您已有自己的小店</span>
+				    	  <button>去我的小店</button>
+				    </div>
+	              </div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	//关注和取消关注
+	function change() {
+    var mark = document.getElementById('btn').innerText;
+    if (mark == '关注') {
+        document.getElementById('btn').innerText = "已关注";
+        document.getElementById('btn').style.border="1px solid #bfbfbf";
+        document.getElementById('btn').style.color="#B1B1B1";
+    }
+    else {
+        document.getElementById('btn').innerText = "关注";
+        document.getElementById('btn').style.border="1px solid #ff712b";
+         document.getElementById('btn').style.color="#ff712b";
+    }
+}
+	$('.orgi-foot').click(function(){
+		var a=$('#btn').html();
+		if(a=="关注"){
+			alert("加入失败");
+		}
+		else{
+			$(".mask").show();
+		}
+	})
+	$(".back-off").click(function(){
+		$(".mask").hide();
+	})
+</script>

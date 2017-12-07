@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<title>会员等级</title>
+	<link rel="stylesheet" type="text/css" href="css/only.css">
+	<link rel="stylesheet" type="text/css" href="css/mem_grade.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<style type="text/css">
+        html{
+        	font-size:13.333vw;
+        }
+	</style>
+</head>
+<body>
+	<!--成长值-->
+	<div class="overall">
+		<div class="top">
+			<div class="silver_title">
+				<div class="img_typeface">
+				<img class="silver_title_img" src="img/v1.jpg">白银会员</div>
+			</div>
+			<div class="strip_common">
+				<div id="one" class="one"></div>
+				<div id="two" class="two"></div>
+				<div id="three" class="three"></div>
+				<div id="fore" class="fore"></div>
+				<div id="five" class="five"></div>
+			</div>
+			<div class="circle_common" id="circle_common"></div>
+			<div class="circle_bronze" id="circle_bronze"></div>
+			<div class="circle_silver">
+				<div class="circle_silver_1">
+					<div class="circle_silver_main">
+						<table class="silver_table">
+							<tr class="silver_tr">
+								<td><span id="span" class="span">10</span></td>
+							</tr>
+							<tr class="silver_tr_char">
+								<td>成长值</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="circle_gold" id="circle_gold"></div>
+			<div class="circle_jewel" id="circle_jewel"></div>
+		</div>
+			<div class="zero"><span id="zero">0</span></div>
+			<div class="six_hundred"><span id="six_hundred">600</span></div>
+			<div class="three_thousand"><span id="three_thousand">3000</span></div>
+			<div class="five_thousand"><span id="five_thousand">5000</span></div>
+			<div class="common"><span id="common">普通</span></div>
+			<div class="bronze"><span id="bronze">青铜</span></div>
+			<div class="silver"><span id="silver">白银</span></div>
+			<div class="gold"><span id="gold">黄金</span></div>
+			<div class="diamond"><span id="diamond">钻石</span></div>
+			<div class="size">距下一等级还需<span id="grow">1400</span>成长值</div>
+		<div class="mem_grade">
+			<div class="mem_title">会员等级制度</div>
+			<div class="title_des">会员级别由成长值决定，成长值越高，享受到的会员权益越多。当会员的消费值达到或超过更高等级的差额时，则会自动升级到对应的等级(消费额度等同于成长值)。</div>
+		</div>
+		<div class="mem_growth">
+		</div>
+		<div class="growth_abate">
+			<div class="mem_down">成长值扣减</div>
+			<div class="down_des">订单产生退换货时，按该笔订单产生的成长值扣减，重新根据订单实际支付金额计算成长值。</div>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript">
+			var x1 = document.getElementById("span").innerText;  
+			if (599>x1>0) {
+				document.getElementById('common').style.color="#ffffff";
+				document.getElementById('zero').style.color="#ffffff";
+				document.getElementById('one').style.background="#ffffff";
+				document.getElementById('circle_common').style.background="#ffffff";
+				var grow = 599-x1;
+				$("#grow").text(grow);
+			}else if(x1>=599 && x1<1499){
+				document.getElementById('common').style.color="#ffffff";
+				document.getElementById('zero').style.color="#ffffff";
+				document.getElementById('one').style.background="#ffffff";
+				document.getElementById('circle_common').style.background="#ffffff";
+
+				document.getElementById('bronze').style.color="#ffffff";
+				document.getElementById('six_hundred').style.color="#ffffff";
+				document.getElementById('two').style.background="#ffffff";
+				document.getElementById('circle_bronze').style.background="#ffffff";
+				var grow = 1499-x1;
+				$("#grow").text(grow);
+			}else if(x1>=1499 && x1<2999){
+				document.getElementById('common').style.color="#ffffff";
+				document.getElementById('zero').style.color="#ffffff";
+				document.getElementById('one').style.background="#ffffff";
+				document.getElementById('circle_common').style.background="#ffffff";
+
+				document.getElementById('bronze').style.color="#ffffff";
+				document.getElementById('six_hundred').style.color="#ffffff";
+				document.getElementById('two').style.background="#ffffff";
+				document.getElementById('circle_bronze').style.background="#ffffff";
+
+				document.getElementById('silver').style.color="#ffffff";
+				document.getElementById('three_thousand').style.color="#ffffff";
+				document.getElementById('three').style.background="#ffffff";
+				var grow = 2900-x1;
+				$("#grow").text(grow);
+			}else if(x1>=2999 && x1<5000){
+				document.getElementById('common').style.color="#ffffff";
+				document.getElementById('zero').style.color="#ffffff";
+				document.getElementById('one').style.background="#ffffff";
+				document.getElementById('circle_common').style.background="#ffffff";
+
+				document.getElementById('bronze').style.color="#ffffff";
+				document.getElementById('six_hundred').style.color="#ffffff";
+				document.getElementById('two').style.background="#ffffff";
+				document.getElementById('circle_bronze').style.background="#ffffff";
+
+				document.getElementById('silver').style.color="#ffffff";
+				document.getElementById('three_thousand').style.color="#ffffff";
+				document.getElementById('three').style.background="#ffffff";
+
+				document.getElementById('gold').style.color="#ffffff";
+				document.getElementById('three_thousand').style.color="#ffffff";
+				document.getElementById('fore').style.background="#ffffff";
+				document.getElementById('circle_gold').style.background="#ffffff";
+				var grow = 5000-x1;
+				$("#grow").text(grow);
+			}else{
+				document.getElementById('common').style.color="#ffffff";
+				document.getElementById('zero').style.color="#ffffff";
+				document.getElementById('one').style.background="#ffffff";
+				document.getElementById('circle_common').style.background="#ffffff";
+
+				document.getElementById('bronze').style.color="#ffffff";
+				document.getElementById('six_hundred').style.color="#ffffff";
+				document.getElementById('two').style.background="#ffffff";
+				document.getElementById('circle_bronze').style.background="#ffffff";
+
+				document.getElementById('silver').style.color="#ffffff";
+				document.getElementById('three_thousand').style.color="#ffffff";
+				document.getElementById('three').style.background="#ffffff";
+
+				document.getElementById('gold').style.color="#ffffff";
+				document.getElementById('three_thousand').style.color="#ffffff";
+				document.getElementById('fore').style.background="#ffffff";
+				document.getElementById('circle_gold').style.background="#ffffff";
+
+				document.getElementById('diamond').style.color="#ffffff";
+				document.getElementById('five_thousand').style.color="#ffffff";
+				document.getElementById('five').style.background="#ffffff";
+				document.getElementById('circle_jewel').style.background="#ffffff";
+				var grow = 5000+x1;
+				$("#grow").text(0);
+			}
+			
+
+	</script>
+</html>

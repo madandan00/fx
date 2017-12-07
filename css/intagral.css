@@ -1,0 +1,75 @@
+@import url(public.css);
+html {
+  font-size: 13.333vw;
+}
+html,
+body,
+.integral {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.intro {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+section {
+  -webkit-box-flex: 1;
+  background: #F0F0F0;
+  height: 100%;
+}
+.what_int {
+  width: 100%;
+  height: 1.4rem;
+  background: #ffffff;
+  padding-left: 0.33rem;
+  box-sizing: border-box;
+}
+.what_int h3 {
+  font-size: 0.3rem;
+  line-height: 0.9rem;
+  color: #303030;
+}
+.what_int p {
+  font-size: 0.24rem;
+  color: #303030;
+}
+.how_int {
+  margin-top: 0.08rem;
+  width: 100%;
+  height: 3.45rem;
+  background: #ffffff;
+  padding-left: 0.33rem;
+  box-sizing: border-box;
+}
+.how_int h4 {
+  font-size: 0.3rem;
+  color: #303030;
+  line-height: 0.55rem;
+}
+.how_int p {
+  line-height: 0.3rem;
+}
+.how_int p b {
+  font-size: 0.24rem;
+}
+.how_int p i {
+  font-size: 0.24rem;
+}
+.eff_int {
+  margin-top: 0.08rem;
+  width: 100%;
+  height: 1.4rem;
+  background: #ffffff;
+  padding-left: 0.33rem;
+  box-sizing: border-box;
+}
+.eff_int h3 {
+  font-size: 0.3rem;
+  line-height: 0.9rem;
+  color: #303030;
+}
+.eff_int p {
+  font-size: 0.24rem;
+  color: #303030;
+}

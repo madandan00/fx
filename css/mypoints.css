@@ -1,0 +1,127 @@
+@import url("public.css");
+html {
+  font-size: 13.333vw; }
+.mylog2{
+	position: absolute;
+	top: 0.3rem;
+	right: 0.3rem;
+	font-size: 0.24rem;
+	color: #fff;
+}
+.aimg{
+	width: 0.26rem;
+	height: 0.26rem;
+}
+.mypoints {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: relative; }
+  .mypoints .back-mypo {
+    width: 100%;
+    height: 3rem;
+    background: none; }
+    .mypoints .back-mypo img {
+      width: 100%;
+      height: 100%;
+      background: none; }
+    .mypoints .back-mypo .img-rba img {
+      width: 2.46rem;
+      height: 2.46rem;
+      background: none;
+      position: absolute;
+      top: 0.8rem;
+      left: 2.5rem; }
+    .mypoints .back-mypo .positione {
+      position: absolute;
+      top: 1.2rem;
+      left: 1.1rem;
+      text-align: center;
+      height: 0.92rem; }
+      .mypoints .back-mypo .positione dt .log-rw {
+        width: 0.57rem;
+        height: 0.57rem;
+        background: none; }
+      .mypoints .back-mypo .positione dd {
+        font-size: 0.28rem;
+        color: #FFFFFF; }
+    .mypoints .back-mypo .qipositi {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.1rem;
+      text-align: center;
+      height: 0.92rem; }
+      .mypoints .back-mypo .qipositi dt .log-rw {
+        width: 0.57rem;
+        height: 0.57rem;
+        background: none; }
+      .mypoints .back-mypo .qipositi dd {
+        font-size: 0.28rem;
+        color: #FFFFFF; }
+    .mypoints .back-mypo p {
+      width: 1.42rem;
+      height: 0.65rem;
+      background: none;
+      font-size: 0.4rem;
+      color: #ff712b;
+      position: absolute;
+      left: 3.1rem;
+      top: 1.8rem;
+      z-index: 22;
+      font-weight: bold;
+      line-height: 0.65rem; }
+      .mypoints .back-mypo p span {
+        font-size: 0.24rem;
+        font-weight: normal; }
+  .mypoints .logbook {
+    width: 100%;
+    height: 1rem;
+    background: none;
+    padding-left: 0.3rem;
+    box-sizing: border-box;
+    line-height: 1rem;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal; }
+    .mypoints .logbook span {
+      display: block;
+      font-size: 0.3rem;
+      color: #303030;
+      margin-left: 0.1rem; }
+    .mypoints .logbook img {
+      width: 0.45rem;
+      height: 0.45rem;
+      background: none;
+      margin-top: -0.1rem; }
+  .mypoints .poinstiafg {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    padding-left: 0.3rem;
+    box-sizing: border-box; }
+    .mypoints .poinstiafg dl {
+      width: 100%;
+      height: 1.3rem;
+      background: #ffffff;
+      position: relative; }
+      .mypoints .poinstiafg dl dt {
+        color: #303030;
+        font-size: 0.28rem;
+        padding-top: 0.3rem; }
+      .mypoints .poinstiafg dl dd {
+        font-size: 0.22rem;
+        color: #909090;
+        padding-top: 0.15rem; }
+        .mypoints .poinstiafg dl dd span {
+          margin-left: 0.15rem; }
+      .mypoints .poinstiafg dl p {
+        color: #303030;
+        font-size: 0.28rem;
+        position: absolute;
+        right: 0.3rem;
+        top: 0.3rem; }
+      .mypoints .poinstiafg dl:nth-child(1) {
+        border-bottom: 1px solid #bfbfbf; }
+
+/*# sourceMappingURL=mypoints.css.map */
